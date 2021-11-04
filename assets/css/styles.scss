@@ -1,0 +1,74 @@
+---
+---
+
+@import "bootstrap/functions";
+
+$font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
+$line-height-base: 1.625;
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$body-bg: $gray-200;
+$body-color: $gray-700;
+
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+
+$spacers: map-merge($spacers, (
+        6: $spacer * 4.5,
+        7: $spacer * 6,
+));
+
+$letter-spacings: (
+        1: 0.01em,
+        2: 0.02em,
+        3: 0.03em,
+        4: 0.04em,
+        5: 0.05em,
+);
+
+$utilities: (
+        "letter-spacing": (
+                property: letter-spacing,
+                values: (
+                        map-merge($letter-spacings, negativify-map($letter-spacings))
+                )
+        )
+);
+
+@import "bootstrap/utilities";
+@import "bootstrap/utilities/api";
+
+@import "bootstrap/helpers";
+
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/accordion";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+@import "bootstrap/offcanvas";
+
+@import "prose";
