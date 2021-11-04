@@ -273,4 +273,4 @@ party may be entitled.
 
 If you have any questions, please contact us using the information below.
 
-- By [contact form]( {{ site.url | append: "/contact" }} )
+- By [contact form]( {{ site.url | append: "#footer" }} )

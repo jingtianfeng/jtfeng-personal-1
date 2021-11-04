@@ -404,4 +404,4 @@ You may print this Privacy Policy by using the "Print" function on your browser.
 If you have any questions or complaints related to this Privacy Policy, or would like to exercise any or your rights,
 please contact us using the information below.
 
-- By [contact form]( {{ site.url | append: "/contact" }} )
+- By [contact form]( {{ site.url | append: "#footer" }} )
