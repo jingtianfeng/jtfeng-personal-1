@@ -42,6 +42,8 @@ $black: shade-color($gray, 90%);
 $primary: $gray-500;
 $body-bg: $gray-900;
 $body-color: $gray-100;
+$link-color: $body-color;
+$link-decoration: none;
 // ---------------------------------------------------------------------------------
 $letter-spacings: (
         1: 0.01em,
