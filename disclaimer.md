@@ -106,9 +106,3 @@ posting the effective date of the latest version at the top of this page, at whi
 immediately effective. It is your responsibility to check for updates, as your continued use of the website and our
 Products after this Disclaimer is amended will constitute your acceptance and agreement to continue to be bound by this
 Disclaimer, as amended.
-
-## HOW TO CONTACT US
-
-If you have any questions, please contact us using the information below.
-
-- By [contact form]( {{ site.url | append: "#footer" }} )

@@ -268,9 +268,3 @@ Agreement. You may not assign any of your rights or transfer any obligations und
 If any action at law or in equity is necessary to enforce or interpret the terms of this Agreement, the prevailing party
 shall be entitled to reasonable attorneys’ fees, costs and disbursements in addition to any other relief to which such
 party may be entitled.
-
-## HOW TO CONTACT US
-
-If you have any questions, please contact us using the information below.
-
-- By [contact form]( {{ site.url | append: "#footer" }} )

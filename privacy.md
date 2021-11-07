@@ -398,10 +398,3 @@ the Privacy Policy as of the last updated date indicated at the top of this page
 ## ALTERNATIVE FORMS
 
 You may print this Privacy Policy by using the "Print" function on your browser.
-
-## HOW TO CONTACT US
-
-If you have any questions or complaints related to this Privacy Policy, or would like to exercise any or your rights,
-please contact us using the information below.
-
-- By [contact form]( {{ site.url | append: "#footer" }} )
