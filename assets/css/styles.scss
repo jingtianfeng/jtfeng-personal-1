@@ -39,11 +39,15 @@ $gray-800: shade-color($gray, 60%);
 $gray-900: shade-color($gray, 80%);
 $black: shade-color($gray, 90%);
 // ---------------------------------------------------------------------------------
-$primary: $gray-700;
 $body-bg: $white;
 $body-color: $gray-900;
-$link-color: $gray-700;
+$primary: $gray-700;
+$text-muted: $gray-700;
+$link-color: $text-muted;
 $link-decoration: none;
+$link-hover-color: $body-color;
+$link-shade-percentage: 0;
+$link-hover-decoration: none;
 // ---------------------------------------------------------------------------------
 $letter-spacings: (
         1: 0.01em,
