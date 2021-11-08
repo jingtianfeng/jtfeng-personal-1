@@ -8,19 +8,18 @@
 // ---------------------------------------------------------------------------------
 $font-size-root: 16px;
 $spacer: 1rem;
-$spacer-base: 1.25;
-$spacer-ratio: 1.375;
+$spacer-ratio: 1.618;
 $spacer-ratio-map: (
         0: 0,
-        1: $spacer-base / $spacer-ratio / $spacer-ratio,
-        2: $spacer-base / $spacer-ratio,
-        3: $spacer-base,
-        4: $spacer-base * $spacer-ratio,
-        5: $spacer-base * $spacer-ratio * $spacer-ratio,
-        6: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio,
-        7: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
-        8: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
-        9: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
+        1: 0.5,
+        2: 0.875,
+        3: 1.25,
+        4: $spacer-ratio,
+        5: $spacer-ratio * $spacer-ratio,
+        6: $spacer-ratio * $spacer-ratio * $spacer-ratio,
+        7: $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
+        8: $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
+        9: $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
 );
 $spacers: (
         0: 0,
