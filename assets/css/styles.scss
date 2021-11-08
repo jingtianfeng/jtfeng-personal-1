@@ -9,6 +9,7 @@
 $font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
 $font-size-root: 16px;
 $font-size-base: 1rem;
+$letter-spacing-base: 0.01em;
 $spacer: $font-size-base;
 $spacer-ratio: 1.618;
 $spacer-ratio-map: (
@@ -178,6 +179,10 @@ $utilities: (
 @import "bootstrap/root";
 @import "bootstrap/reboot";
 // ---------------------------------------------------------------------------------
+body {
+  letter-spacing: $letter-spacing-base;
+}
+
 h1 {
   font-style: $h1-font-style;
   letter-spacing: $h1-letter-spacing;
