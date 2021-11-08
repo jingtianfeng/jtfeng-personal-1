@@ -6,8 +6,10 @@
 // ---------------------------------------------------------------------------------
 @import "bootstrap/functions";
 // ---------------------------------------------------------------------------------
+$font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
 $font-size-root: 16px;
-$spacer: 1rem;
+$font-size-base: 1rem;
+$spacer: $font-size-base;
 $spacer-ratio: 1.618;
 $spacer-ratio-map: (
         0: 0,
@@ -67,8 +69,6 @@ $link-hover-color: $body-color;
 $link-hover-decoration: none;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
-$font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
-$font-size-base: $spacer;
 $paragraph-margin-bottom: map-get($spacers, 3);
 // ---------------------------------------------------------------------------------
 $font-weight-lighter: 300;
@@ -82,7 +82,7 @@ $line-height-sm: map-get($spacer-ratio-map, 3);
 $line-height-lg: map-get($spacer-ratio-map, 4);
 // ---------------------------------------------------------------------------------
 $headings-color: $gray-900;
-$headings-font-family: "Inter";
+$headings-font-family: $font-family-sans-serif;
 $headings-font-style: normal;
 $headings-font-weight: $font-weight-normal;
 $headings-line-height: map-get($spacer-ratio-map, 3);
