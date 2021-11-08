@@ -7,16 +7,29 @@
 @import "bootstrap/functions";
 // ---------------------------------------------------------------------------------
 $spacer: 1rem;
+$spacer-base: 1.1;
+$spacer-ratio: 1.618;
+$spacer-ratio-map: (
+        0: 0,
+        1: $spacer-base / $spacer-ratio / $spacer-ratio,
+        2: $spacer-base / $spacer-ratio,
+        3: $spacer-base,
+        4: $spacer-base * $spacer-ratio,
+        5: $spacer-base * $spacer-ratio * $spacer-ratio,
+        6: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio,
+        7: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
+        8: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
+);
 $spacers: (
         0: 0,
-        1: $spacer * .25,
-        2: $spacer * .5,
-        3: $spacer,
-        4: $spacer * 1.625,
-        5: $spacer * 2.625,
-        6: $spacer * 4.25,
-        7: $spacer * 6.875,
-        8: $spacer * 11.125,
+        1: $spacer * map-get($spacer-ratio-map, 1),
+        2: $spacer * map-get($spacer-ratio-map, 2),
+        3: $spacer * map-get($spacer-ratio-map, 3),
+        4: $spacer * map-get($spacer-ratio-map, 4),
+        5: $spacer * map-get($spacer-ratio-map, 5),
+        6: $spacer * map-get($spacer-ratio-map, 6),
+        7: $spacer * map-get($spacer-ratio-map, 7),
+        8: $spacer * map-get($spacer-ratio-map, 8),
 );
 // ---------------------------------------------------------------------------------
 $gray: #8c92ac;
@@ -45,8 +58,9 @@ $link-hover-decoration: none;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
 $font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
-$font-size-root: 16px;
+$font-size-root: 20px;
 $font-size-base: $spacer;
+$paragraph-margin-bottom: map-get($spacers, 3);
 // ---------------------------------------------------------------------------------
 $font-weight-lighter: 300;
 $font-weight-light: 300;
@@ -54,39 +68,39 @@ $font-weight-normal: 400;
 $font-weight-bold: 600;
 $font-weight-bolder: 600;
 // ---------------------------------------------------------------------------------
-$line-height-base: 1.75;
-$line-height-sm: 1.25;
-$line-height-lg: 2;
+$line-height-base: map-get($spacer-ratio-map, 4);
+$line-height-sm: map-get($spacer-ratio-map, 3);
+$line-height-lg: map-get($spacer-ratio-map, 4);
 // ---------------------------------------------------------------------------------
-$h1-font-size: $font-size-base * 2.625;
-$h2-font-size: $font-size-base * 2.625;
-$h3-font-size: $font-size-base * 1.625;
-$h4-font-size: $font-size-base * 1.25;
-$h5-font-size: $font-size-base * 1;
-$h6-font-size: $font-size-base * 0.875;
+$h1-font-size: map-get($spacers, 5);
+$h2-font-size: map-get($spacers, 5);
+$h3-font-size: map-get($spacers, 4);
+$h4-font-size: map-get($spacers, 4);
+$h5-font-size: map-get($spacers, 3);
+$h6-font-size: map-get($spacers, 3);
 // ---------------------------------------------------------------------------------
 $headings-color: $gray-900;
 $headings-font-family: "Inter";
-$headings-font-style: none;
+$headings-font-style: normal;
 $headings-font-weight: $font-weight-normal;
-$headings-line-height: 1.375;
-$headings-margin-bottom: map-get($spacers, 3);
+$headings-line-height: map-get($spacer-ratio-map, 3);
+$headings-margin-bottom: map-get($spacers, 0);
 // ---------------------------------------------------------------------------------
 $display-font-sizes: (
         1: map-get($spacers, 8),
         2: map-get($spacers, 7),
         3: map-get($spacers, 6),
 );
-$display-font-weight: $font-weight-light;
-$display-line-height: 1.125;
+$display-font-weight: $font-weight-normal;
+$display-line-height: map-get($spacer-ratio-map, 3);
 // ---------------------------------------------------------------------------------
-$lead-font-size: $font-size-base * 1.618;
+$lead-font-size: map-get($spacers, 3);
 $lead-font-weight: $font-weight-normal;
-$small-font-size: $font-size-base * 0.875;
-$sub-sup-font-size: $font-size-base * 0.75;
+$small-font-size: map-get($spacers, 2);
+$sub-sup-font-size: $small-font-size;
 $initialism-font-size: $small-font-size;
 // ---------------------------------------------------------------------------------
-$blockquote-font-size: $font-size-base * 1.618;
+$blockquote-font-size: $h4-font-size;
 $blockquote-footer-color: $text-muted;
 $blockquote-footer-font-size: $font-size-base;
 $blockquote-margin-y: $font-size-base;
