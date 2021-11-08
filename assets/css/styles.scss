@@ -6,9 +6,10 @@
 // ---------------------------------------------------------------------------------
 @import "bootstrap/functions";
 // ---------------------------------------------------------------------------------
+$font-size-root: 16px;
 $spacer: 1rem;
-$spacer-base: 1.2;
-$spacer-ratio: 1.5;
+$spacer-base: 1.25;
+$spacer-ratio: 1.375;
 $spacer-ratio-map: (
         0: 0,
         1: $spacer-base / $spacer-ratio / $spacer-ratio,
@@ -19,6 +20,7 @@ $spacer-ratio-map: (
         6: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio,
         7: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
         8: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
+        9: $spacer-base * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
 );
 $spacers: (
         0: 0,
@@ -30,6 +32,7 @@ $spacers: (
         6: $spacer * map-get($spacer-ratio-map, 6),
         7: $spacer * map-get($spacer-ratio-map, 7),
         8: $spacer * map-get($spacer-ratio-map, 8),
+        9: $spacer * map-get($spacer-ratio-map, 9),
 );
 // ---------------------------------------------------------------------------------
 $gray: #8c92ac;
@@ -58,7 +61,6 @@ $link-hover-decoration: none;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
 $font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
-$font-size-root: 20px;
 $font-size-base: $spacer;
 $paragraph-margin-bottom: map-get($spacers, 3);
 // ---------------------------------------------------------------------------------
@@ -87,9 +89,10 @@ $headings-line-height: map-get($spacer-ratio-map, 3);
 $headings-margin-bottom: map-get($spacers, 0);
 // ---------------------------------------------------------------------------------
 $display-font-sizes: (
-        1: map-get($spacers, 8),
-        2: map-get($spacers, 7),
-        3: map-get($spacers, 6),
+        1: map-get($spacers, 9),
+        2: map-get($spacers, 8),
+        3: map-get($spacers, 7),
+        4: map-get($spacers, 6),
 );
 $display-font-weight: $font-weight-normal;
 $display-line-height: map-get($spacer-ratio-map, 3);
