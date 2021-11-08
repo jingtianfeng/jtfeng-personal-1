@@ -80,6 +80,17 @@ $display-font-sizes: (
 $display-font-weight: $font-weight-light;
 $display-line-height: 1.125;
 // ---------------------------------------------------------------------------------
+$lead-font-size: $font-size-base * 1.618;
+$lead-font-weight: $font-weight-normal;
+$small-font-size: $font-size-base * 0.875;
+$sub-sup-font-size: $font-size-base * 0.75;
+$initialism-font-size: $small-font-size;
+// ---------------------------------------------------------------------------------
+$blockquote-font-size: $font-size-base * 1.618;
+$blockquote-footer-color: $text-muted;
+$blockquote-footer-font-size: $font-size-base;
+$blockquote-margin-y: $font-size-base;
+// ---------------------------------------------------------------------------------
 $letter-spacings: (
         1: 0.01em,
         2: 0.02em,
