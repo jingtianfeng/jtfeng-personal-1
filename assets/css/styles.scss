@@ -81,19 +81,36 @@ $line-height-base: map-get($spacer-ratio-map, 4);
 $line-height-sm: map-get($spacer-ratio-map, 3);
 $line-height-lg: map-get($spacer-ratio-map, 4);
 // ---------------------------------------------------------------------------------
-$h1-font-size: map-get($spacers, 5);
-$h2-font-size: map-get($spacers, 5);
-$h3-font-size: map-get($spacers, 4);
-$h4-font-size: map-get($spacers, 4);
-$h5-font-size: map-get($spacers, 3);
-$h6-font-size: map-get($spacers, 3);
-// ---------------------------------------------------------------------------------
 $headings-color: $gray-900;
 $headings-font-family: "Inter";
 $headings-font-style: normal;
 $headings-font-weight: $font-weight-normal;
 $headings-line-height: map-get($spacer-ratio-map, 3);
 $headings-margin-bottom: map-get($spacers, 0);
+// ---------------------------------------------------------------------------------
+$h1-font-size: map-get($spacers, 5);
+$h1-letter-spacing: -0.05em;
+$h1-line-height: $headings-line-height;
+// ---------------------------------------------------------------------------------
+$h2-font-size: map-get($spacers, 5);
+$h2-letter-spacing: -0.05em;
+$h2-line-height: $headings-line-height;
+// ---------------------------------------------------------------------------------
+$h3-font-size: map-get($spacers, 4);
+$h3-letter-spacing: -0.05em;
+$h3-line-height: $headings-line-height;
+// ---------------------------------------------------------------------------------
+$h4-font-size: map-get($spacers, 4);
+$h4-letter-spacing: -0.05em;
+$h4-line-height: $headings-line-height;
+// ---------------------------------------------------------------------------------
+$h5-font-size: map-get($spacers, 3);
+$h5-letter-spacing: -0.05em;
+$h5-line-height: $headings-line-height;
+// ---------------------------------------------------------------------------------
+$h6-font-size: map-get($spacers, 3);
+$h6-letter-spacing: -0.05em;
+$h6-line-height: $headings-line-height;
 // ---------------------------------------------------------------------------------
 $display-font-sizes: (
         1: map-get($spacers, 9),
