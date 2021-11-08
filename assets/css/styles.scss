@@ -97,19 +97,19 @@ $h2-letter-spacing: -0.05em;
 $h2-line-height: $headings-line-height;
 // ---------------------------------------------------------------------------------
 $h3-font-size: map-get($spacers, 4);
-$h3-letter-spacing: -0.05em;
+$h3-letter-spacing: -0.03em;
 $h3-line-height: $headings-line-height;
 // ---------------------------------------------------------------------------------
 $h4-font-size: map-get($spacers, 4);
-$h4-letter-spacing: -0.05em;
+$h4-letter-spacing: -0.03em;
 $h4-line-height: $headings-line-height;
 // ---------------------------------------------------------------------------------
 $h5-font-size: map-get($spacers, 3);
-$h5-letter-spacing: -0.05em;
+$h5-letter-spacing: -0.01em;
 $h5-line-height: $headings-line-height;
 // ---------------------------------------------------------------------------------
 $h6-font-size: map-get($spacers, 3);
-$h6-letter-spacing: -0.05em;
+$h6-letter-spacing: -0.01em;
 $h6-line-height: $headings-line-height;
 // ---------------------------------------------------------------------------------
 $display-font-sizes: (
@@ -166,6 +166,37 @@ $utilities: (
 // ---------------------------------------------------------------------------------
 @import "bootstrap/root";
 @import "bootstrap/reboot";
+// ---------------------------------------------------------------------------------
+h1 {
+  letter-spacing: $h1-letter-spacing;
+  line-height: $h1-line-height;
+}
+
+h2 {
+  letter-spacing: $h2-letter-spacing;
+  line-height: $h2-line-height;
+}
+
+h3 {
+  letter-spacing: $h3-letter-spacing;
+  line-height: $h3-line-height;
+}
+
+h4 {
+  letter-spacing: $h4-letter-spacing;
+  line-height: $h4-line-height;
+}
+
+h5 {
+  letter-spacing: $h5-letter-spacing;
+  line-height: $h5-line-height;
+}
+
+h6 {
+  letter-spacing: $h6-letter-spacing;
+  line-height: $h6-line-height;
+}
+
 // ---------------------------------------------------------------------------------
 @import "bootstrap/type";
 @import "bootstrap/images";
