@@ -69,8 +69,6 @@ $link-hover-color: $body-color;
 $link-hover-decoration: none;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
-$paragraph-margin-bottom: map-get($spacers, 3);
-// ---------------------------------------------------------------------------------
 $font-weight-lighter: 300;
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -133,6 +131,7 @@ $display-font-sizes: (
 $display-font-weight: $font-weight-normal;
 $display-line-height: map-get($spacer-ratio-map, 3);
 // ---------------------------------------------------------------------------------
+$paragraph-margin-bottom: map-get($spacers, 4);
 $lead-font-size: map-get($spacers, 3);
 $lead-font-weight: $font-weight-normal;
 $small-font-size: map-get($spacers, 2);
