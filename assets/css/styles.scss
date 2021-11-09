@@ -61,7 +61,7 @@ $black: shade-color($gray, 90%);
 $body-bg: $gray-150;
 $body-color: $black;
 // ---------------------------------------------------------------------------------
-$primary: $black;
+$primary: darkblue;
 $text-muted: $gray-700;
 // ---------------------------------------------------------------------------------
 $font-weight-lighter: 300;
@@ -126,7 +126,7 @@ $display-font-sizes: (
 $display-font-weight: $font-weight-normal;
 $display-line-height: map-get($spacer-ratio-map, 3);
 // ---------------------------------------------------------------------------------
-$link-color: $text-muted;
+$link-color: $primary;
 $link-font-weight: $font-weight-normal + 100;
 $link-decoration: none;
 $link-hover-color: $body-color;
