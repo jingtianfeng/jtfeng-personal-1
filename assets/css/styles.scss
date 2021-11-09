@@ -37,7 +37,7 @@ $spacers: (
         9: $spacer * map-get($spacer-ratio-map, 9),
 );
 // ---------------------------------------------------------------------------------
-$gray: #8c92ac;
+$gray: #808080;
 $white: tint-color($gray, 90%);
 $gray-100: tint-color($gray, 80%);
 $gray-150: tint-color($gray, 70%);
@@ -58,10 +58,10 @@ $gray-850: shade-color($gray, 70%);
 $gray-900: shade-color($gray, 80%);
 $black: shade-color($gray, 90%);
 // ---------------------------------------------------------------------------------
-$body-bg: $gray-150;
+$body-bg: $white;
 $body-color: $black;
 // ---------------------------------------------------------------------------------
-$primary: darkblue;
+$primary: #000080;
 $text-muted: $gray-700;
 // ---------------------------------------------------------------------------------
 $font-weight-lighter: 300;
@@ -72,7 +72,7 @@ $font-weight-bolder: 600;
 // ---------------------------------------------------------------------------------
 $line-height-base: map-get($spacer-ratio-map, 4);
 $line-height-sm: map-get($spacer-ratio-map, 3);
-$line-height-lg: map-get($spacer-ratio-map, 4);
+$line-height-lg: map-get($spacer-ratio-map, 5);
 // ---------------------------------------------------------------------------------
 $headings-color: $gray-900;
 $headings-font-family: $font-family-sans-serif;
@@ -83,25 +83,25 @@ $headings-margin-bottom: map-get($spacers, 0);
 // ---------------------------------------------------------------------------------
 $h1-font-size: map-get($spacers, 5);
 $h1-font-style: normal;
-$h1-letter-spacing: -0.05em;
+$h1-letter-spacing: -0.03em;
 $h1-line-height: $headings-line-height;
 $h1-text-transform: none;
 // ---------------------------------------------------------------------------------
 $h2-font-size: map-get($spacers, 5);
 $h2-font-style: normal;
-$h2-letter-spacing: -0.05em;
+$h2-letter-spacing: -0.03em;
 $h2-line-height: $headings-line-height;
 $h2-text-transform: none;
 // ---------------------------------------------------------------------------------
 $h3-font-size: map-get($spacers, 4);
 $h3-font-style: normal;
-$h3-letter-spacing: -0.03em;
+$h3-letter-spacing: -0.02em;
 $h3-line-height: $headings-line-height;
 $h3-text-transform: none;
 // ---------------------------------------------------------------------------------
 $h4-font-size: map-get($spacers, 4);
 $h4-font-style: normal;
-$h4-letter-spacing: -0.03em;
+$h4-letter-spacing: -0.02em;
 $h4-line-height: $headings-line-height;
 $h4-text-transform: none;
 // ---------------------------------------------------------------------------------
@@ -129,28 +129,28 @@ $display-line-height: map-get($spacer-ratio-map, 3);
 $link-color: $primary;
 $link-font-weight: $font-weight-normal + 100;
 $link-decoration: none;
-$link-hover-color: $body-color;
+$link-hover-color: shade-color($primary, 80%);
 $link-hover-decoration: none;
 $link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
 $paragraph-margin-bottom: map-get($spacers, 4);
-$lead-font-size: map-get($spacers, 3);
+$lead-font-size: $h4-font-size;
 $lead-font-weight: $font-weight-normal;
 $small-font-size: map-get($spacers, 2);
 $sub-sup-font-size: $small-font-size;
 $initialism-font-size: $small-font-size;
 // ---------------------------------------------------------------------------------
-$blockquote-font-size: $h4-font-size;
+$blockquote-font-size: $lead-font-size;
 $blockquote-footer-color: $text-muted;
 $blockquote-footer-font-size: $font-size-base;
-$blockquote-margin-y: $font-size-base;
+$blockquote-margin-y: map-get($spacers, 5);
 // ---------------------------------------------------------------------------------
-$input-btn-font-family: $headings-font-family;
+$input-btn-font-family: $font-family-sans-serif;
 $input-btn-font-size: $font-size-base;
-$input-btn-line-height: 1;
-$input-btn-padding-x: map-get($spacers, 3);
-$input-btn-padding-y: map-get($spacers, 2);
+$input-btn-line-height: $line-height-base;
+$input-btn-padding-x: map-get($spacers, 5) / 2;
+$input-btn-padding-y: map-get($spacers, 4) / 2;
 // ---------------------------------------------------------------------------------
 $btn-white-space: nowrap;
 $btn-font-weight: $link-font-weight;
