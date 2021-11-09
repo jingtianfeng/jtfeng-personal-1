@@ -64,12 +64,6 @@ $body-color: $black;
 $primary: $black;
 $text-muted: $gray-700;
 // ---------------------------------------------------------------------------------
-$link-color: $text-muted;
-$link-decoration: none;
-$link-hover-color: $body-color;
-$link-hover-decoration: none;
-$link-shade-percentage: 0;
-// ---------------------------------------------------------------------------------
 $font-weight-lighter: 300;
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -131,6 +125,14 @@ $display-font-sizes: (
 );
 $display-font-weight: $font-weight-normal;
 $display-line-height: map-get($spacer-ratio-map, 3);
+// ---------------------------------------------------------------------------------
+$link-color: $text-muted;
+$link-font-weight: $font-weight-bold;
+$link-decoration: none;
+$link-hover-color: $body-color;
+$link-hover-decoration: none;
+$link-letter-spacing: 0.03em;
+$link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
 $paragraph-margin-bottom: map-get($spacers, 4);
 $lead-font-size: map-get($spacers, 3);
@@ -223,6 +225,11 @@ h6 {
   letter-spacing: $h6-letter-spacing;
   line-height: $h6-line-height;
   text-transform: $h6-text-transform;
+}
+
+a {
+  font-weight: $link-font-weight;
+  letter-spacing: $link-letter-spacing;
 }
 
 // ---------------------------------------------------------------------------------
