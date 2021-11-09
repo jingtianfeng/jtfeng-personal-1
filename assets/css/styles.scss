@@ -12,11 +12,12 @@ $font-size-base: 1rem;
 $letter-spacing-base: 0.01em;
 $spacer: $font-size-base;
 $spacer-ratio: 1.618;
+$spacer-ratio-sqrt: 1.272;
 $spacer-ratio-map: (
         0: 0,
-        1: 0.5,
-        2: 0.875,
-        3: 1.25,
+        1: $spacer-ratio / 3,
+        2: $spacer-ratio / 2,
+        3: $spacer-ratio-sqrt,
         4: $spacer-ratio,
         5: $spacer-ratio * $spacer-ratio,
         6: $spacer-ratio * $spacer-ratio * $spacer-ratio,
