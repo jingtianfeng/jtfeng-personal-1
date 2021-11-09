@@ -6,11 +6,7 @@
 // ---------------------------------------------------------------------------------
 @import "bootstrap/functions";
 // ---------------------------------------------------------------------------------
-$font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
-$font-size-root: 16px;
-$font-size-base: 1rem;
-$letter-spacing-base: 0.01em;
-$spacer: $font-size-base;
+$spacer: 1rem;
 $spacer-ratio: 1.618;
 $spacer-ratio-sqrt: 1.272;
 $spacer-ratio-map: (
@@ -64,6 +60,11 @@ $body-color: $black;
 // ---------------------------------------------------------------------------------
 $primary: #000080;
 $text-muted: $gray-700;
+// ---------------------------------------------------------------------------------
+$font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
+$font-size-root: 16px;
+$font-size-base: 1rem;
+$letter-spacing-base: 0.01em;
 // ---------------------------------------------------------------------------------
 $font-weight-lighter: 300;
 $font-weight-light: 300;
