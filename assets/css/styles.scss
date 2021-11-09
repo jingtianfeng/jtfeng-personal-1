@@ -127,11 +127,11 @@ $display-font-weight: $font-weight-normal;
 $display-line-height: map-get($spacer-ratio-map, 3);
 // ---------------------------------------------------------------------------------
 $link-color: $text-muted;
-$link-font-weight: $font-weight-bold;
+$link-font-weight: $font-weight-normal + 100;
 $link-decoration: none;
 $link-hover-color: $body-color;
 $link-hover-decoration: none;
-$link-letter-spacing: 0.03em;
+$link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
 $paragraph-margin-bottom: map-get($spacers, 4);
@@ -151,6 +151,9 @@ $input-btn-font-size: $font-size-base;
 $input-btn-line-height: 1;
 $input-btn-padding-x: map-get($spacers, 3);
 $input-btn-padding-y: map-get($spacers, 2);
+// ---------------------------------------------------------------------------------
+$btn-white-space: nowrap;
+$btn-font-weight: $link-font-weight;
 // ---------------------------------------------------------------------------------
 $letter-spacings: (
         1: 0.01em,
