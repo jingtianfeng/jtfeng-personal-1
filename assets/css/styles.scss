@@ -196,9 +196,9 @@ $border-widths: (
         9: 9px,
 );
 $border-color: $text-muted;
-$border-radius: 1 / map-get($spacer-ratio-map, 6) * 1rem;
-$border-radius-sm: 1 / map-get($spacer-ratio-map, 7) * 1rem;
-$border-radius-lg: 1 / map-get($spacer-ratio-map, 5) * 1rem;
+$border-radius: 1rem / map-get($spacer-ratio-map, 5);
+$border-radius-sm: 1rem / map-get($spacer-ratio-map, 6);
+$border-radius-lg: 1rem / map-get($spacer-ratio-map, 4);
 $border-radius-pill: map-get($spacers, 9);
 // ---------------------------------------------------------------------------------
 $letter-spacings: (
