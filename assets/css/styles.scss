@@ -75,26 +75,7 @@ $spacers: (
         9: $spacer * map-get($spacer-ratio-map, 9),
 );
 // ---------------------------------------------------------------------------------
-// C) Layout
-// ---------------------------------------------------------------------------------
-$grid-columns: 12;
-$grid-row-columns: 6;
-$grid-gutter-width: map-get($spacers, 5);
-$grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px,
-);
-$container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-        xl: 1140px,
-);
-// ---------------------------------------------------------------------------------
-// D) Typography
+// C) Typography
 // ---------------------------------------------------------------------------------
 $font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
 $font-size-root: 16px;
@@ -176,6 +157,25 @@ $paragraph-margin-bottom: map-get($spacers, 4);
 $small-font-size: map-get($spacers, 2);
 $sub-sup-font-size: $small-font-size;
 $initialism-font-size: $small-font-size;
+// ---------------------------------------------------------------------------------
+// D) Layout
+// ---------------------------------------------------------------------------------
+$grid-columns: 12;
+$grid-row-columns: 6;
+$grid-gutter-width: map-get($spacers, 5);
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+);
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+);
 // ---------------------------------------------------------------------------------
 // Elements & Components
 // ---------------------------------------------------------------------------------
