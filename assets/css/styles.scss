@@ -175,6 +175,8 @@ $input-btn-padding-x: map-get($spacers, 5) / 2;
 $input-btn-padding-y: map-get($spacers, 4) / 2;
 $input-btn-padding-x-sm: map-get($spacers, 4) / 2;
 $input-btn-padding-y-sm: map-get($spacers, 3) / 2;
+$input-btn-padding-x-lg: map-get($spacers, 6) / 2;
+$input-btn-padding-y-lg: map-get($spacers, 5) / 2;
 // ---------------------------------------------------------------------------------
 $btn-white-space: nowrap;
 $btn-font-weight: $link-font-weight;
