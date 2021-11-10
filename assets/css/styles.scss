@@ -31,8 +31,15 @@ $black: shade-color($gray, 90%);
 // ---------------------------------------------------------------------------------
 $body-bg: $white;
 $body-color: $black;
-$primary: #000080;
+$light: $gray-100;
+$dark: $gray-900;
 $text-muted: $gray-700;
+$primary: #000080;
+$secondary: cyan;
+$info: blue;
+$success: green;
+$warning: orange;
+$danger: red;
 // ---------------------------------------------------------------------------------
 $min-contrast-ratio: 4.5;
 $color-contrast-dark: $body-color;
