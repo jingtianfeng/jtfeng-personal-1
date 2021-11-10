@@ -145,8 +145,6 @@ $display-font-weight: $font-weight-normal;
 $display-line-height: map-get($spacer-ratio-map, 3);
 // ---------------------------------------------------------------------------------
 $paragraph-margin-bottom: map-get($spacers, 4);
-$lead-font-size: $h4-font-size;
-$lead-font-weight: $font-weight-normal;
 $small-font-size: map-get($spacers, 2);
 $sub-sup-font-size: $small-font-size;
 $initialism-font-size: $small-font-size;
@@ -161,6 +159,8 @@ $link-hover-decoration: none;
 $link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
+$lead-font-size: map-get($spacers, 4);
+$lead-font-weight: $font-weight-normal;
 $blockquote-font-size: $lead-font-size;
 $blockquote-footer-color: $text-muted;
 $blockquote-footer-font-size: $font-size-base;
