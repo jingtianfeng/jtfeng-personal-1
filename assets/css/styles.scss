@@ -80,6 +80,8 @@ $spacers: (
 $font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
 $font-size-root: 16px;
 $font-size-base: 1rem;
+$font-size-sm: map-get($spacers, 2);
+$font-size-lg: map-get($spacers, 3);
 $letter-spacing-base: 0.01em;
 // ---------------------------------------------------------------------------------
 $line-height-base: map-get($spacer-ratio-map, 4);
