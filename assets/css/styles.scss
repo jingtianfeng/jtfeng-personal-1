@@ -2,9 +2,39 @@
 ---
 
 // =================================================================================
-// 1. Functions & Initial Variables
+// 1. FUNCTIONS & INITIAL VARIABLES
 // ---------------------------------------------------------------------------------
 @import "bootstrap/functions";
+// ---------------------------------------------------------------------------------
+// Colors
+// ---------------------------------------------------------------------------------
+$gray: #808080;
+$white: tint-color($gray, 90%);
+$gray-100: tint-color($gray, 80%);
+$gray-150: tint-color($gray, 70%);
+$gray-200: tint-color($gray, 60%);
+$gray-250: tint-color($gray, 50%);
+$gray-300: tint-color($gray, 40%);
+$gray-350: tint-color($gray, 30%);
+$gray-400: tint-color($gray, 20%);
+$gray-450: tint-color($gray, 10%);
+$gray-500: $gray;
+$gray-550: shade-color($gray, 10%);
+$gray-600: shade-color($gray, 20%);
+$gray-650: shade-color($gray, 30%);
+$gray-700: shade-color($gray, 40%);
+$gray-750: shade-color($gray, 50%);
+$gray-800: shade-color($gray, 60%);
+$gray-850: shade-color($gray, 70%);
+$gray-900: shade-color($gray, 80%);
+$black: shade-color($gray, 90%);
+// ---------------------------------------------------------------------------------
+$body-bg: $white;
+$body-color: $black;
+$primary: #000080;
+$text-muted: $gray-700;
+// ---------------------------------------------------------------------------------
+// Spacing
 // ---------------------------------------------------------------------------------
 $spacer: 1rem;
 $spacer-ratio: 1.618;
@@ -34,32 +64,7 @@ $spacers: (
         9: $spacer * map-get($spacer-ratio-map, 9),
 );
 // ---------------------------------------------------------------------------------
-$gray: #808080;
-$white: tint-color($gray, 90%);
-$gray-100: tint-color($gray, 80%);
-$gray-150: tint-color($gray, 70%);
-$gray-200: tint-color($gray, 60%);
-$gray-250: tint-color($gray, 50%);
-$gray-300: tint-color($gray, 40%);
-$gray-350: tint-color($gray, 30%);
-$gray-400: tint-color($gray, 20%);
-$gray-450: tint-color($gray, 10%);
-$gray-500: $gray;
-$gray-550: shade-color($gray, 10%);
-$gray-600: shade-color($gray, 20%);
-$gray-650: shade-color($gray, 30%);
-$gray-700: shade-color($gray, 40%);
-$gray-750: shade-color($gray, 50%);
-$gray-800: shade-color($gray, 60%);
-$gray-850: shade-color($gray, 70%);
-$gray-900: shade-color($gray, 80%);
-$black: shade-color($gray, 90%);
-// ---------------------------------------------------------------------------------
-$body-bg: $white;
-$body-color: $black;
-// ---------------------------------------------------------------------------------
-$primary: #000080;
-$text-muted: $gray-700;
+// Typography
 // ---------------------------------------------------------------------------------
 $font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
 $font-size-root: 16px;
@@ -128,6 +133,15 @@ $display-font-sizes: (
 $display-font-weight: $font-weight-normal;
 $display-line-height: map-get($spacer-ratio-map, 3);
 // ---------------------------------------------------------------------------------
+$paragraph-margin-bottom: map-get($spacers, 4);
+$lead-font-size: $h4-font-size;
+$lead-font-weight: $font-weight-normal;
+$small-font-size: map-get($spacers, 2);
+$sub-sup-font-size: $small-font-size;
+$initialism-font-size: $small-font-size;
+// ---------------------------------------------------------------------------------
+// Elements & Components
+// ---------------------------------------------------------------------------------
 $link-color: $primary;
 $link-font-weight: $font-weight-normal + 100;
 $link-decoration: none;
@@ -135,13 +149,6 @@ $link-hover-color: shade-color($primary, 80%);
 $link-hover-decoration: none;
 $link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
-// ---------------------------------------------------------------------------------
-$paragraph-margin-bottom: map-get($spacers, 4);
-$lead-font-size: $h4-font-size;
-$lead-font-weight: $font-weight-normal;
-$small-font-size: map-get($spacers, 2);
-$sub-sup-font-size: $small-font-size;
-$initialism-font-size: $small-font-size;
 // ---------------------------------------------------------------------------------
 $blockquote-font-size: $lead-font-size;
 $blockquote-footer-color: $text-muted;
@@ -156,6 +163,8 @@ $input-btn-padding-y: map-get($spacers, 4) / 2;
 // ---------------------------------------------------------------------------------
 $btn-white-space: nowrap;
 $btn-font-weight: $link-font-weight;
+// ---------------------------------------------------------------------------------
+// Utilities
 // ---------------------------------------------------------------------------------
 $letter-spacings: (
         1: 0.01em,
@@ -177,14 +186,9 @@ $utilities: (
         )
 );
 // =================================================================================
-// 2. Default & Derived Variables
+// 3. REST OF BOOTSTRAP
 // ---------------------------------------------------------------------------------
 @import "bootstrap/variables";
-// ---------------------------------------------------------------------------------
-
-
-// =================================================================================
-// 3. Rest of Bootstrap
 // ---------------------------------------------------------------------------------
 @import "bootstrap/mixins";
 @import "bootstrap/utilities";
@@ -278,6 +282,6 @@ a {
 // ---------------------------------------------------------------------------------
 @import "bootstrap/utilities/api";
 // =================================================================================
-// 4. Non-Bootstrap
+// 4. NON-BOOTSTRAP
 // ---------------------------------------------------------------------------------
 @import "prose";
