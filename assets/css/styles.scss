@@ -160,8 +160,8 @@ $initialism-font-size: $small-font-size;
 // ---------------------------------------------------------------------------------
 // D) Layout
 // ---------------------------------------------------------------------------------
-$grid-columns: 12;
-$grid-row-columns: 6;
+$grid-columns: 4;
+$grid-row-columns: 4;
 $grid-gutter-width: map-get($spacers, 5);
 $grid-breakpoints: (
         xs: 0,
