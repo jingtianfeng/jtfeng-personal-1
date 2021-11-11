@@ -85,8 +85,8 @@ $font-size-lg: map-get($spacers, 3);
 $letter-spacing-base: 0.01em;
 // ---------------------------------------------------------------------------------
 $line-height-base: map-get($spacer-ratio-map, 4);
-$line-height-sm: 1;
-$line-height-lg: 2;
+$line-height-sm: map-get($spacer-ratio-map, 3);
+$line-height-lg: $line-height-base * $line-height-sm;
 // ---------------------------------------------------------------------------------
 $font-weight-lighter: 300;
 $font-weight-light: 300;
@@ -98,7 +98,7 @@ $headings-color: $gray-900;
 $headings-font-family: $font-family-sans-serif;
 $headings-font-style: normal;
 $headings-font-weight: $font-weight-normal;
-$headings-line-height: map-get($spacer-ratio-map, 3);
+$headings-line-height: $line-height-sm;
 $headings-margin-bottom: map-get($spacers, 0);
 // ---------------------------------------------------------------------------------
 $h1-font-size: map-get($spacers, 5);
@@ -144,7 +144,7 @@ $display-font-sizes: (
         4: map-get($spacers, 6),
 );
 $display-font-weight: $font-weight-normal;
-$display-line-height: map-get($spacer-ratio-map, 3);
+$display-line-height: $headings-line-height;
 // ---------------------------------------------------------------------------------
 $lead-font-size: map-get($spacers, 3);
 $lead-font-weight: $font-weight-normal;
