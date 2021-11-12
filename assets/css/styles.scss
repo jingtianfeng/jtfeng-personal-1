@@ -191,6 +191,7 @@ $link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
 $list-padding-left: map-get($spacers, 4);
+$list-padding-top: $paragraph-adjacent-sibling-margin-top;
 // ---------------------------------------------------------------------------------
 $input-btn-font-family: $font-family-sans-serif;
 $input-btn-font-size: $font-size-base;
@@ -318,6 +319,7 @@ blockquote {
 ol,
 ul {
   padding-left: $list-padding-left;
+  padding-top: $list-padding-top;
 }
 
 ol,
