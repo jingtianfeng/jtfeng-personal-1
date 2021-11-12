@@ -182,10 +182,6 @@ $container-max-widths: (
 // ---------------------------------------------------------------------------------
 // Elements & Components
 // ---------------------------------------------------------------------------------
-$address-margin-bottom: 0;
-// ---------------------------------------------------------------------------------
-$figure-margin-bottom: 0;
-// ---------------------------------------------------------------------------------
 $link-color: $primary;
 $link-font-weight: $font-weight-normal + 100;
 $link-decoration: none;
@@ -340,11 +336,11 @@ li + li {
 }
 
 address {
-  margin-bottom: $address-margin-bottom;
+  margin-bottom: 0;
 }
 
 figure {
-  margin-bottom: $figure-margin-bottom;
+  margin-bottom: 0;
 }
 
 // =================================================================================
