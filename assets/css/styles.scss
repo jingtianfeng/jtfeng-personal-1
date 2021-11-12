@@ -190,6 +190,8 @@ $link-hover-decoration: none;
 $link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
+$list-padding-left: map-get($spacers, 4);
+// ---------------------------------------------------------------------------------
 $input-btn-font-family: $font-family-sans-serif;
 $input-btn-font-size: $font-size-base;
 $input-btn-line-height: $line-height-base;
@@ -315,7 +317,7 @@ blockquote {
 
 ol,
 ul {
-  padding-left: map-get($spacers, 4);
+  padding-left: $list-padding-left;
 }
 
 ol,
