@@ -298,6 +298,10 @@ h6 {
   text-transform: $h6-text-transform;
 }
 
+p + p {
+  margin-top: map-get($spacers, 3);
+}
+
 a {
   font-weight: $link-font-weight;
   letter-spacing: $link-letter-spacing;
