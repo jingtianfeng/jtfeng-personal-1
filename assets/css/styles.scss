@@ -103,13 +103,13 @@ $headings-margin-bottom: 0;
 // ---------------------------------------------------------------------------------
 $h1-font-size: map-get($spacers, 5);
 $h1-font-style: normal;
-$h1-letter-spacing: -0.03em;
+$h1-letter-spacing: -0.04em;
 $h1-line-height: $headings-line-height;
 $h1-text-transform: none;
 // ---------------------------------------------------------------------------------
 $h2-font-size: map-get($spacers, 5);
 $h2-font-style: normal;
-$h2-letter-spacing: -0.03em;
+$h2-letter-spacing: -0.04em;
 $h2-line-height: $headings-line-height;
 $h2-text-transform: none;
 // ---------------------------------------------------------------------------------
@@ -127,13 +127,13 @@ $h4-text-transform: none;
 // ---------------------------------------------------------------------------------
 $h5-font-size: map-get($spacers, 3);
 $h5-font-style: normal;
-$h5-letter-spacing: -0.01em;
+$h5-letter-spacing: 0;
 $h5-line-height: $headings-line-height;
 $h5-text-transform: none;
 // ---------------------------------------------------------------------------------
 $h6-font-size: map-get($spacers, 3);
 $h6-font-style: normal;
-$h6-letter-spacing: -0.01em;
+$h6-letter-spacing: 0;
 $h6-line-height: $headings-line-height;
 $h6-text-transform: none;
 // ---------------------------------------------------------------------------------
