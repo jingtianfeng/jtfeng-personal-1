@@ -152,6 +152,7 @@ $blockquote-font-size: $lead-font-size;
 $blockquote-footer-color: $text-muted;
 $blockquote-footer-font-size: $font-size-base;
 $blockquote-letter-spacing: 0;
+$blockquote-line-height: map-get($spacer-ratio-map, 4);
 $blockquote-margin-y: 0;
 // ---------------------------------------------------------------------------------
 $paragraph-margin-bottom: map-get($spacers, 4);
@@ -304,6 +305,7 @@ a {
 
 blockquote {
   letter-spacing: $blockquote-letter-spacing;
+  line-height: $blockquote-line-height;
 }
 
 // =================================================================================
