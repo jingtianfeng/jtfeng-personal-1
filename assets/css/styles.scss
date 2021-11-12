@@ -214,7 +214,7 @@ $border-widths: (
         8: 8px,
         9: 9px,
 );
-$border-color: $text-muted;
+$border-color: $gray-150;
 $border-radius: 1rem / map-get($spacer-ratio-map, 5);
 $border-radius-sm: 1rem / map-get($spacer-ratio-map, 6);
 $border-radius-lg: 1rem / map-get($spacer-ratio-map, 4);
