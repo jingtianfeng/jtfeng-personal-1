@@ -151,6 +151,7 @@ $lead-font-weight: $font-weight-normal;
 $blockquote-font-size: $lead-font-size;
 $blockquote-footer-color: $text-muted;
 $blockquote-footer-font-size: $font-size-base;
+$blockquote-letter-spacing: 0;
 $blockquote-margin-y: 0;
 // ---------------------------------------------------------------------------------
 $paragraph-margin-bottom: map-get($spacers, 4);
@@ -299,6 +300,10 @@ h6 {
 a {
   font-weight: $link-font-weight;
   letter-spacing: $link-letter-spacing;
+}
+
+blockquote {
+  letter-spacing: $blockquote-letter-spacing;
 }
 
 // =================================================================================
