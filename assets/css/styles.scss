@@ -99,7 +99,7 @@ $headings-font-family: $font-family-sans-serif;
 $headings-font-style: normal;
 $headings-font-weight: $font-weight-normal;
 $headings-line-height: $line-height-sm;
-$headings-margin-bottom: map-get($spacers, 0);
+$headings-margin-bottom: 0;
 // ---------------------------------------------------------------------------------
 $h1-font-size: map-get($spacers, 5);
 $h1-font-style: normal;
@@ -151,7 +151,7 @@ $lead-font-weight: $font-weight-normal;
 $blockquote-font-size: $lead-font-size;
 $blockquote-footer-color: $text-muted;
 $blockquote-footer-font-size: $font-size-base;
-$blockquote-margin-y: map-get($spacers, 4);
+$blockquote-margin-y: 0;
 // ---------------------------------------------------------------------------------
 $paragraph-margin-bottom: map-get($spacers, 4);
 $small-font-size: map-get($spacers, 2);
