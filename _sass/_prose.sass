@@ -1,14 +1,15 @@
 .prose
-  max-width: 65ch
-  font-size: 1.125rem
-  line-height: 1.75
+  max-width: 700px
+
+  p + p
+    margin-top: map-get($spacers, 4)
 
   h1, h2, h3, h4, h5, h6
-    margin-top: 1.75em
-    margin-bottom: 0.75em
+    margin-top: map-get($spacers, 6)
+    margin-bottom: map-get($spacers, 4)
 
-  li + li
-    margin-top: map-get($spacers, 3)
+  li
+    margin-top: map-get($spacers, 2)
 
   img
     max-width: 100%
