@@ -304,10 +304,6 @@ h6 {
   text-transform: $h6-text-transform;
 }
 
-p + p {
-  margin-top: $paragraph-adjacent-sibling-margin-top;
-}
-
 a {
   font-weight: $link-font-weight;
   letter-spacing: $link-letter-spacing;
@@ -319,20 +315,9 @@ blockquote {
 }
 
 ol,
-ul {
-  padding-left: $list-padding-left;
-  padding-top: $list-padding-top;
-  padding-bottom: $list-padding-bottom;
-}
-
-ol,
 ul,
 dl {
   margin: 0;
-}
-
-li + li {
-  margin-top: $list-item-adjacent-sibling-margin-top;
 }
 
 address {
