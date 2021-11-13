@@ -245,6 +245,7 @@ $utilities: (
 // Custom
 // ---------------------------------------------------------------------------------
 $prose-max-width: 65ch;
+$prose-headings-margin-top: map-get($spacers, 7) / 2;
 $prose-paragraph-adjacent-sibling-margin-top: map-get($spacers, 3);
 $prose-list-padding-left: map-get($spacers, 4);
 $prose-list-padding-top: $prose-paragraph-adjacent-sibling-margin-top;
