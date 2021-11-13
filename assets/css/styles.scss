@@ -155,7 +155,7 @@ $blockquote-letter-spacing: 0;
 $blockquote-line-height: map-get($spacer-ratio-map, 4);
 $blockquote-margin-y: 0;
 // ---------------------------------------------------------------------------------
-$paragraph-adjacent-sibling-margin-top: map-get($spacers, 3);
+$prose-paragraph-adjacent-sibling-margin-top: map-get($spacers, 3);
 $paragraph-margin-bottom: 0;
 $small-font-size: map-get($spacers, 2);
 $sub-sup-font-size: $small-font-size;
@@ -190,10 +190,10 @@ $link-hover-decoration: none;
 $link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
-$list-padding-left: map-get($spacers, 4);
-$list-padding-top: $paragraph-adjacent-sibling-margin-top;
-$list-padding-bottom: $list-padding-top;
-$list-item-adjacent-sibling-margin-top: $list-padding-top;
+$prose-list-padding-left: map-get($spacers, 4);
+$prose-list-padding-top: $prose-paragraph-adjacent-sibling-margin-top;
+$prose-list-padding-bottom: $prose-list-padding-top;
+$prose-list-item-adjacent-sibling-margin-top: $prose-list-padding-top;
 // ---------------------------------------------------------------------------------
 $input-btn-font-family: $font-family-sans-serif;
 $input-btn-font-size: $font-size-base;
