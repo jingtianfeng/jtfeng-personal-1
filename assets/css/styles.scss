@@ -217,10 +217,10 @@ $border-widths: (
         9: 9px,
 );
 $border-color: $gray-100;
-$border-radius: 1rem / map-get($spacer-ratio-map, 5);
-$border-radius-sm: 1rem / map-get($spacer-ratio-map, 6);
-$border-radius-lg: 1rem / map-get($spacer-ratio-map, 4);
-$border-radius-pill: map-get($spacers, 9);
+$border-radius: .25rem;
+$border-radius-sm: .125rem;
+$border-radius-lg: .375rem;
+$border-radius-pill: 50rem;
 // ---------------------------------------------------------------------------------
 $letter-spacings: (
         1: 0.01em,
