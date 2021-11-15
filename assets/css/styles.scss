@@ -52,8 +52,8 @@ $spacer-ratio: 1.618;
 $spacer-ratio-sqrt: 1.272;
 $spacer-ratio-map: (
         0: 0,
-        1: $spacer-ratio / 3,
-        2: $spacer-ratio / 2,
+        1: $spacer-ratio * .33,
+        2: $spacer-ratio * .5,
         3: $spacer-ratio-sqrt,
         4: $spacer-ratio,
         5: $spacer-ratio * $spacer-ratio,
