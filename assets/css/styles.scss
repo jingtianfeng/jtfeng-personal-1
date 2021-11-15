@@ -245,10 +245,10 @@ $utilities: (
 // Custom
 // ---------------------------------------------------------------------------------
 $prose-max-width: 66ch;
-$prose-headings-margin-top: map-get($spacers, 7) / 2;
-$prose-headings-margin-bottom: map-get($spacers, 5) / 2;
+$prose-headings-margin-top: map-get($spacers, 7) * .5;
+$prose-headings-margin-bottom: map-get($spacers, 5) * .5;
 $prose-paragraph-adjacent-sibling-margin-top: $prose-headings-margin-bottom;
-$prose-list-padding-left: map-get($spacers, 6) / 2;
+$prose-list-padding-left: map-get($spacers, 6) * .5;
 $prose-list-padding-top: $prose-paragraph-adjacent-sibling-margin-top;
 $prose-list-padding-bottom: $prose-list-padding-top;
 $prose-list-item-adjacent-sibling-margin-top: $prose-list-padding-top;
