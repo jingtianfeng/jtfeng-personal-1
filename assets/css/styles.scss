@@ -48,8 +48,8 @@ $color-contrast-light: $body-bg;
 // B) Spacing
 // ---------------------------------------------------------------------------------
 $spacer: 1rem;
-$spacer-ratio: 1.625;
-$spacer-ratio-sqrt: 1.25;
+$spacer-ratio: 1.7;
+$spacer-ratio-sqrt: 1.3;
 $spacer-ratio-map: (
         0: 0,
         1: $spacer-ratio * .3,
