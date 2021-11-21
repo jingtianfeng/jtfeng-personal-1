@@ -172,7 +172,7 @@ $grid-breakpoints: (
         lg: 992px,
 );
 // ---------------------------------------------------------------------------------
-$container-padding-x: map-get($spacers, 4);
+$container-padding-x: $grid-gutter-width;
 $container-max-widths: (
         sm: 540px,
         md: 720px,
