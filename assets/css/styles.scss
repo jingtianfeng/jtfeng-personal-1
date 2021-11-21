@@ -75,7 +75,26 @@ $spacers: (
         9: $spacer * map-get($spacer-ratio-map, 9),
 );
 // ---------------------------------------------------------------------------------
-// C) Typography
+// C) Layout
+// ---------------------------------------------------------------------------------
+$grid-columns: 4;
+$grid-row-columns: 4;
+$grid-gutter-width: map-get($spacers, 4);
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+);
+// ---------------------------------------------------------------------------------
+$container-padding-x: $grid-gutter-width;
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+);
+// ---------------------------------------------------------------------------------
+// D) Typography
 // ---------------------------------------------------------------------------------
 $font-family-sans-serif: "Inter", "Helvetica Neue", sans-serif;
 $font-size-root: 16px;
@@ -159,25 +178,6 @@ $paragraph-margin-bottom: 0;
 $small-font-size: map-get($spacers, 2);
 $sub-sup-font-size: $small-font-size;
 $initialism-font-size: $small-font-size;
-// ---------------------------------------------------------------------------------
-// D) Layout
-// ---------------------------------------------------------------------------------
-$grid-columns: 4;
-$grid-row-columns: 4;
-$grid-gutter-width: map-get($spacers, 4);
-$grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-);
-// ---------------------------------------------------------------------------------
-$container-padding-x: $grid-gutter-width;
-$container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-);
 // ---------------------------------------------------------------------------------
 // E) Utilities
 // ---------------------------------------------------------------------------------
