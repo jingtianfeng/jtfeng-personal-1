@@ -157,13 +157,11 @@ $h6-line-height: $headings-line-height;
 $h6-text-transform: none;
 // ---------------------------------------------------------------------------------
 $display-font-sizes: (
-        1: map-get($spacers, 9),
-        2: map-get($spacers, 8),
-        3: map-get($spacers, 7),
-        4: map-get($spacers, 6),
+        1: map-get($spacers, 8),
+        2: map-get($spacers, 7),
 );
 $display-font-weight: $font-weight-light;
-$display-line-height: $headings-line-height;
+$display-line-height: 1;
 // ---------------------------------------------------------------------------------
 $lead-font-size: map-get($spacers, 3);
 $lead-font-weight: $font-weight-normal;
