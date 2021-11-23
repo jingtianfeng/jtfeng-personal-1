@@ -162,7 +162,7 @@ $display-font-sizes: (
         3: map-get($spacers, 7),
         4: map-get($spacers, 6),
 );
-$display-font-weight: $font-weight-normal;
+$display-font-weight: $font-weight-light;
 $display-line-height: $headings-line-height;
 // ---------------------------------------------------------------------------------
 $lead-font-size: map-get($spacers, 3);
@@ -171,7 +171,7 @@ $blockquote-font-size: $lead-font-size;
 $blockquote-footer-color: $text-muted;
 $blockquote-footer-font-size: $font-size-base;
 $blockquote-letter-spacing: 0;
-$blockquote-line-height: map-get($spacer-ratio-map, 4);
+$blockquote-line-height: $headings-line-height;
 $blockquote-margin-y: 0;
 // ---------------------------------------------------------------------------------
 $paragraph-margin-bottom: 0;
@@ -221,10 +221,10 @@ $utilities: (
 // ---------------------------------------------------------------------------------
 // F) Elements & Components
 // ---------------------------------------------------------------------------------
-$link-color: $primary;
+$link-color: $body-color;
 $link-font-weight: $font-weight-normal + 100;
 $link-decoration: none;
-$link-hover-color: shade-color($primary, 80%);
+$link-hover-color: $text-muted;
 $link-hover-decoration: none;
 $link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
