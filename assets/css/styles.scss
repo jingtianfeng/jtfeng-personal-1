@@ -107,9 +107,9 @@ $line-height-base: map-get($spacer-ratio-map, 4);
 $line-height-sm: map-get($spacer-ratio-map, 3);
 $line-height-lg: $line-height-base * $line-height-sm;
 // ---------------------------------------------------------------------------------
-$font-weight-lighter: 300;
-$font-weight-light: 300;
-$font-weight-normal: 400;
+$font-weight-lighter: 400;
+$font-weight-light: 400;
+$font-weight-normal: 500;
 $font-weight-bold: 600;
 $font-weight-bolder: 600;
 // ---------------------------------------------------------------------------------
