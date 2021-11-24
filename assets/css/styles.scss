@@ -56,11 +56,11 @@ $spacer-ratio-map: (
         2: $spacer-ratio * .5,
         3: $spacer-ratio-sqrt,
         4: $spacer-ratio,
-        5: $spacer-ratio * $spacer-ratio,
-        6: $spacer-ratio * $spacer-ratio * $spacer-ratio,
-        7: $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
-        8: $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
-        9: $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio * $spacer-ratio,
+        5: $spacer-ratio * 2,
+        6: $spacer-ratio * 3,
+        7: $spacer-ratio * 4,
+        8: $spacer-ratio * 8,
+        9: $spacer-ratio * 16,
 );
 $spacers: (
         0: 0,
