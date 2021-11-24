@@ -151,8 +151,12 @@ $h6-line-height: $line-height-base;
 $h6-text-transform: none;
 // ---------------------------------------------------------------------------------
 $display-font-sizes: (
-        1: map-get($spacers, 8),
-        2: map-get($spacers, 7),
+        1: map-get($spacers, 9),
+        2: map-get($spacers, 8),
+        3: map-get($spacers, 7),
+        4: map-get($spacers, 6),
+        5: map-get($spacers, 5),
+        6: map-get($spacers, 4),
 );
 $display-font-weight: $font-weight-light;
 $display-line-height: 1;
