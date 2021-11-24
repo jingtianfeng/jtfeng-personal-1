@@ -120,9 +120,9 @@ $headings-font-weight: $font-weight-normal;
 $headings-line-height: 1;
 $headings-margin-bottom: 0;
 // ---------------------------------------------------------------------------------
-$h1-font-size: map-get($spacers, 5);
-$h1-letter-spacing: -0.05em;
-$h1-line-height: $headings-line-height;
+$h1-font-size: $spacer * $spacer-ratio * 2 * .756;
+$h1-letter-spacing: -0.06em;
+$h1-line-height: $spacer-ratio-sqrt;
 $h1-text-transform: none;
 // ---------------------------------------------------------------------------------
 $h2-font-size: map-get($spacers, 4);
