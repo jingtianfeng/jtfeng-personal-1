@@ -125,9 +125,9 @@ $h1-letter-spacing: -0.06em;
 $h1-line-height: $spacer-ratio-sqrt;
 $h1-text-transform: none;
 // ---------------------------------------------------------------------------------
-$h2-font-size: map-get($spacers, 4);
-$h2-letter-spacing: -0.03em;
-$h2-line-height: $headings-line-height;
+$h2-font-size: $spacer * $spacer-ratio-sqrt;
+$h2-letter-spacing: -0.06em;
+$h2-line-height: $spacer-ratio-sqrt;
 $h2-text-transform: none;
 // ---------------------------------------------------------------------------------
 $h3-font-size: $font-size-base;
