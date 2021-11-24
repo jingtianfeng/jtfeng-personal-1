@@ -117,7 +117,7 @@ $headings-color: $body-color;
 $headings-font-family: $font-family-sans-serif;
 $headings-font-style: normal;
 $headings-font-weight: $font-weight-normal;
-$headings-line-height: $line-height-sm;
+$headings-line-height: 1;
 $headings-margin-bottom: 0;
 // ---------------------------------------------------------------------------------
 $h1-font-size: map-get($spacers, 5);
