@@ -29,21 +29,21 @@ $gray-850: shade-color($gray, 70%);
 $gray-900: shade-color($gray, 80%);
 $black: shade-color($gray, 90%);
 // ---------------------------------------------------------------------------------
-$body-bg: $white;
-$body-color: $black;
-$light: $gray-100;
-$dark: $body-color;
-$text-muted: $gray-500;
-$primary: #000080;
-$secondary: cyan;
+$body-bg: $gray-900;
+$body-color: $gray-100;
+$light: $gray-450;
+$dark: $light;
+$text-muted: $light;
+$primary: #f05142;
+$secondary: navy;
 $info: blue;
 $success: green;
 $warning: orange;
 $danger: red;
 // ---------------------------------------------------------------------------------
 $min-contrast-ratio: 4.5;
-$color-contrast-dark: $body-color;
-$color-contrast-light: $body-bg;
+$color-contrast-dark: $body-bg;
+$color-contrast-light: $body-color;
 // ---------------------------------------------------------------------------------
 // B) Spacing
 // ---------------------------------------------------------------------------------
