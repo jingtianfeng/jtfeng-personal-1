@@ -31,9 +31,9 @@ $black: shade-color($gray, 90%);
 // ---------------------------------------------------------------------------------
 $body-bg: $gray-900;
 $body-color: $gray-150;
-$light: $gray-450;
-$dark: $light;
-$text-muted: $light;
+$light: $body-color;
+$dark: $gray-450;
+$text-muted: $dark;
 $primary: #f05142;
 $secondary: navy;
 $info: blue;
