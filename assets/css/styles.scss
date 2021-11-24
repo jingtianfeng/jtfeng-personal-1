@@ -29,11 +29,11 @@ $gray-850: shade-color($gray, 70%);
 $gray-900: shade-color($gray, 80%);
 $black: shade-color($gray, 90%);
 // ---------------------------------------------------------------------------------
-$body-bg: $gray-900;
-$body-color: $gray-150;
-$light: $body-color;
-$dark: $gray-450;
-$text-muted: $dark;
+$body-bg: $black;
+$body-color: $gray-100;
+$light: $gray-100;
+$dark: $gray-900;
+$text-muted: $gray-500;
 $primary: #f05142;
 $secondary: navy;
 $info: blue;
