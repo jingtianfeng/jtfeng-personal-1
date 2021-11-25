@@ -103,8 +103,8 @@ $font-size-sm: .875rem;
 $font-size-lg: 1.25rem;
 $letter-spacing-base: 0.01em;
 // ---------------------------------------------------------------------------------
-$line-height-base: map-get($spacer-ratio-map, 4);
-$line-height-sm: map-get($spacer-ratio-map, 3);
+$line-height-base: $spacer-ratio;
+$line-height-sm: $spacer-ratio-sqrt;
 $line-height-lg: 2;
 // ---------------------------------------------------------------------------------
 $font-weight-lighter: 400;
