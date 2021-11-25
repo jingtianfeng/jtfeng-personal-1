@@ -79,7 +79,7 @@ $spacers: (
 // ---------------------------------------------------------------------------------
 $grid-columns: 4;
 $grid-row-columns: 4;
-$grid-gutter-width: map-get($spacers, 4);
+$grid-gutter-width: $spacer * $spacer-ratio;
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,
