@@ -145,9 +145,9 @@ $h5-letter-spacing: $h2-letter-spacing;
 $h5-line-height: $h2-line-height;
 $h5-text-transform: none;
 // ---------------------------------------------------------------------------------
-$h6-font-size: $font-size-base;
-$h6-letter-spacing: $letter-spacing-base;
-$h6-line-height: $line-height-base;
+$h6-font-size: $h2-font-size;
+$h6-letter-spacing: $h2-letter-spacing;
+$h6-line-height: $h2-line-height;
 $h6-text-transform: none;
 // ---------------------------------------------------------------------------------
 $display-font-sizes: (
