@@ -64,15 +64,15 @@ $spacer-ratio-map: (
 );
 $spacers: (
         0: 0,
-        1: $spacer * map-get($spacer-ratio-map, 1),
-        2: $spacer * map-get($spacer-ratio-map, 2),
-        3: $spacer * map-get($spacer-ratio-map, 3),
-        4: $spacer * map-get($spacer-ratio-map, 4),
-        5: $spacer * map-get($spacer-ratio-map, 5),
-        6: $spacer * map-get($spacer-ratio-map, 6),
-        7: $spacer * map-get($spacer-ratio-map, 7),
-        8: $spacer * map-get($spacer-ratio-map, 8),
-        9: $spacer * map-get($spacer-ratio-map, 9),
+        1: $spacer * .5,
+        2: $spacer * .875,
+        3: $spacer * $spacer-ratio-sqrt,
+        4: $spacer * $spacer-ratio,
+        5: $spacer * $spacer-ratio * 2,
+        6: $spacer * $spacer-ratio * 3,
+        7: $spacer * $spacer-ratio * 4,
+        8: $spacer * $spacer-ratio * 8,
+        9: $spacer * $spacer-ratio * 16,
 );
 // ---------------------------------------------------------------------------------
 // C) Layout
