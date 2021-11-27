@@ -212,19 +212,6 @@ $link-hover-decoration: none;
 $link-letter-spacing: $letter-spacing-base + 0.01em;
 $link-shade-percentage: 0;
 // ---------------------------------------------------------------------------------
-$input-btn-font-family: $font-family-sans-serif;
-$input-btn-font-size: $font-size-base;
-$input-btn-line-height: $line-height-base;
-$input-btn-padding-x: map-get($spacers, 5) * .5;
-$input-btn-padding-y: map-get($spacers, 4) * .5;
-$input-btn-padding-x-sm: map-get($spacers, 4) * .5;
-$input-btn-padding-y-sm: map-get($spacers, 3) * .5;
-$input-btn-padding-x-lg: map-get($spacers, 6) * .5;
-$input-btn-padding-y-lg: map-get($spacers, 5) * .5;
-// ---------------------------------------------------------------------------------
-$btn-white-space: nowrap;
-$btn-font-weight: $link-font-weight;
-// ---------------------------------------------------------------------------------
 // G) Custom
 // ---------------------------------------------------------------------------------
 $prose-max-width: 72ch;
