@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Disclaimer"
+blockquote: "Hope the disclaimer above answered your questions."
 ---
 
 # Disclaimer
