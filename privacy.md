@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Privacy Policy"
+blockquote: "Hope the privacy policy above answered your questions."
 ---
 
 # Privacy Policy
