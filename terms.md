@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Terms & Conditions"
+blockquote: "Hope the terms and conditions above satisfy your needs."
 ---
 
 # Terms and Conditions
