@@ -11,4 +11,4 @@
 #### Next Steps
 
 - [ ] Copywriting
-- [ ] Character design and SVG
+- [ ] Illustrations
