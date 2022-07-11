@@ -9,4 +9,9 @@ elemBody.appendChild(elemBGContainer);
 
 elemBGContainer.style.position = "absolute";
 elemBGContainer.style.inset = "0px";
-elemBGContainer.style.zIndex = -1000;
+elemBGContainer.style.zIndex = "-1000";
+elemBGContainer.style.pointerEvents = "none";
+elemBGContainer.style.userSelect = "none";
+
+elemBGContainer.tabIndex = "-1";
+elemBGContainer.ariaDisabled = "true";
