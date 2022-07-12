@@ -10,6 +10,7 @@ elemBody.appendChild(elemBGContainer);
 elemBGContainer.style.position = "absolute";
 elemBGContainer.style.inset = "0px";
 elemBGContainer.style.zIndex = "-1000";
+elemBGContainer.style.overflow = "hidden";
 elemBGContainer.style.pointerEvents = "none";
 elemBGContainer.style.userSelect = "none";
 // --------------------------------------------------------------------------
