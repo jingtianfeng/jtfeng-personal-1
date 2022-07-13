@@ -24,6 +24,10 @@ const NBR_PARTICLE_AMOUNT = 500;
 const NBR_PARTICLE_DIAMETER_MIN = 100;
 const NBR_PARTICLE_DIAMETER_MAX = 250;
 // --------------------------------------------------------------------------
+const randomizeStep = (nbrStep) => {
+	return Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100;
+}
+// --------------------------------------------------------------------------
 for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	let elemParticle = document.createElement("div");
 	elemParticle.style.position = "absolute";
