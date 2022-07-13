@@ -23,7 +23,7 @@ const NBR_CANVAS_HEIGHT = 25000;
 const NBR_PARTICLE_AMOUNT = 500;
 const NBR_PARTICLE_DIAMETER_MIN = 100;
 const NBR_PARTICLE_DIAMETER_MAX = 250;
-const NBR_PARTICLE_STEP = 10;
+const NBR_PARTICLE_STEP = 2;
 const NBR_PARTICLE_BORDER_RADIUS = NBR_PARTICLE_DIAMETER_MAX / 2;
 const STR_PARTICLE_BORDER = "10px solid darkgray";
 // --------------------------------------------------------------------------
