@@ -23,6 +23,7 @@ const NBR_CANVAS_HEIGHT = 25000;
 const NBR_PARTICLE_AMOUNT = 500;
 const NBR_PARTICLE_DIAMETER_MIN = 100;
 const NBR_PARTICLE_DIAMETER_MAX = 250;
+const NBR_PARTICLE_STEP = 4;
 // --------------------------------------------------------------------------
 const randomizeStep = (nbrStep) => {
 	return Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100;
