@@ -43,8 +43,8 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	elemParticle.style.height = elemParticle.style.width;
 	elemParticle.style.border = STR_PARTICLE_BORDER;
 	elemParticle.style.borderRadius = `${NBR_PARTICLE_BORDER_RADIUS}px`;
-	elemParticle.style.top = `${NBR_CANVAS_HEIGHT * Math.random()}px`;
-	elemParticle.style.left = `${NBR_CANVAS_WIDTH * Math.random()}px`;
+	elemParticle.style.top = `${Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
+	elemParticle.style.left = `${Math.round(NBR_CANVAS_WIDTH*Math.random())}px`;
 	arrParticle.push(elemParticle);
 }
 // --------------------------------------------------------------------------
