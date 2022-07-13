@@ -30,8 +30,8 @@ const STR_PARTICLE_BORDER = "10px solid darkgray";
 const randomizeStep = (nbrStep) => {
 	if (nbrStep < 2) {
 		nbrStep = 2;
-	} else if (nbrStep > 20) {
-		nbrStep = 20;
+	} else if (nbrStep > 100) {
+		nbrStep = 100;
 	}
 	return Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100;
 }
