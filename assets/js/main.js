@@ -20,18 +20,18 @@ elemBGContainer.ariaDisabled = "true";
 let arrParticle = [];
 const NBR_CANVAS_WIDTH = 7680;
 const NBR_CANVAS_HEIGHT = 25000;
-const NBR_PARTICLE_AMOUNT = 1000;
-const NBR_PARTICLE_WIDTH_MIN = 100;
-const NBR_PARTICLE_WIDTH_MAX = 500;
+const NBR_PARTICLE_AMOUNT = 500;
+const NBR_PARTICLE_WIDTH_MIN = 150;
+const NBR_PARTICLE_WIDTH_MAX = 250;
 const NBR_PARTICLE_WIDTH_STEP = 2;
-const NBR_PARTICLE_HEIGHT_MIN = 500;
-const NBR_PARTICLE_HEIGHT_MAX = 1000;
+const NBR_PARTICLE_HEIGHT_MIN = 250;
+const NBR_PARTICLE_HEIGHT_MAX = 500;
 const NBR_PARTICLE_HEIGHT_STEP = 50;
-const NBR_PARTICLE_BORDER_RADIUS = 8;
+const NBR_PARTICLE_BORDER_RADIUS = 4;
 const STR_PARTICLE_BORDER = "2px solid darkgray";
 const STR_PARTICLE_BG_COLOR = "rgba(0, 0, 0, 0.5)";
 const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
-const BOOL_PARTICLE_IS_ROUNDED = true;
+const BOOL_PARTICLE_IS_ROUNDED = false;
 // --------------------------------------------------------------------------
 const randomizeStep = (nbrStep) => {
 	if (nbrStep <= 0) {
@@ -51,7 +51,7 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	elemParticle.style.height = BOOL_PARTICLE_HAS_SIDES_EQUAL? elemParticle.style.width : `${NBR_PARTICLE_HEIGHT_MAX - (NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN)*randomizeStep(NBR_PARTICLE_HEIGHT_STEP)}px`;
 	elemParticle.style.backgroundColor = STR_PARTICLE_BG_COLOR;
 	elemParticle.style.border = STR_PARTICLE_BORDER;
-	elemParticle.style.borderRadius = `${BOOL_PARTICLE_IS_ROUNDED ? Math.min(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX) / 2 : NBR_PARTICLE_BORDER_RADIUS}px`;
+	elemParticle.style.borderRadius = `${BOOL_PARTICLE_IS_ROUNDED ? Math.max(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX)/2 : NBR_PARTICLE_BORDER_RADIUS}px`;
 	elemParticle.style.top = `${Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
 	elemParticle.style.left = `${Math.round(NBR_CANVAS_WIDTH*Math.random())}px`;
 	arrParticle.push(elemParticle);
