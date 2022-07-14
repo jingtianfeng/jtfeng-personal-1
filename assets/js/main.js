@@ -34,12 +34,14 @@ const NBR_PARTICLE_BORDER_RADIUS = NBR_PARTICLE_DIAMETER_MAX / 2;
 const STR_PARTICLE_BORDER = "10px solid darkgray";
 // --------------------------------------------------------------------------
 const randomizeStep = (nbrStep) => {
-	if (nbrStep < 2) {
-		nbrStep = 2;
-	} else if (nbrStep > 100) {
-		nbrStep = 100;
+	if (nbrStep <= 0) {
+		return 0;
+	} else if (nbrStep === 1) {
+		return Math.round(Math.random());
+	} else {
+		nbrStep = Math.min(nbrStep, 100);
+		return Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100;
 	}
-	return Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100;
 }
 // --------------------------------------------------------------------------
 for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
