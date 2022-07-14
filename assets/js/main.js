@@ -21,16 +21,13 @@ let arrParticle = [];
 const NBR_CANVAS_WIDTH = 7680;
 const NBR_CANVAS_HEIGHT = 25000;
 const NBR_PARTICLE_AMOUNT = 500;
-const NBR_PARTICLE_DIAMETER_MIN = 100;
-const NBR_PARTICLE_DIAMETER_MAX = 250;
 const NBR_PARTICLE_WIDTH_MIN = 100;
 const NBR_PARTICLE_WIDTH_MAX = 250;
 const NBR_PARTICLE_WIDTH_STEP = 2;
-const NBR_PARTICLE_HEIGHT_MIN = 100;
-const NBR_PARTICLE_HEIGHT_MAX = 250;
-const NBR_PARTICLE_HEIGHT_STEP = 2;
-const NBR_PARTICLE_STEP = 2;
-const NBR_PARTICLE_BORDER_RADIUS = NBR_PARTICLE_DIAMETER_MAX / 2;
+const NBR_PARTICLE_HEIGHT_MIN = 250;
+const NBR_PARTICLE_HEIGHT_MAX = 500;
+const NBR_PARTICLE_HEIGHT_STEP = 20;
+const NBR_PARTICLE_BORDER_RADIUS = Math.min(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX)/2;
 const STR_PARTICLE_BORDER = "10px solid darkgray";
 // --------------------------------------------------------------------------
 const randomizeStep = (nbrStep) => {
@@ -47,8 +44,8 @@ const randomizeStep = (nbrStep) => {
 for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	let elemParticle = document.createElement("div");
 	elemParticle.style.position = "absolute";
-	elemParticle.style.width = `${NBR_PARTICLE_DIAMETER_MAX - (NBR_PARTICLE_DIAMETER_MAX - NBR_PARTICLE_DIAMETER_MIN)*randomizeStep(NBR_PARTICLE_STEP)}px`;
-	elemParticle.style.height = elemParticle.style.width;
+	elemParticle.style.width = `${NBR_PARTICLE_WIDTH_MAX - (NBR_PARTICLE_WIDTH_MAX - NBR_PARTICLE_WIDTH_MIN)*randomizeStep(NBR_PARTICLE_WIDTH_STEP)}px`;
+	elemParticle.style.height = `${NBR_PARTICLE_HEIGHT_MAX - (NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN)*randomizeStep(NBR_PARTICLE_HEIGHT_STEP)}px`;
 	elemParticle.style.border = STR_PARTICLE_BORDER;
 	elemParticle.style.borderRadius = `${NBR_PARTICLE_BORDER_RADIUS}px`;
 	elemParticle.style.top = `${Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
