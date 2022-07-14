@@ -21,17 +21,17 @@ let arrParticle = [];
 const NBR_CANVAS_WIDTH = 7680;
 const NBR_CANVAS_HEIGHT = 25000;
 const NBR_PARTICLE_AMOUNT = 500;
-const NBR_PARTICLE_WIDTH_MIN = 150;
-const NBR_PARTICLE_WIDTH_MAX = 250;
-const NBR_PARTICLE_WIDTH_STEP = 2;
-const NBR_PARTICLE_HEIGHT_MIN = 250;
-const NBR_PARTICLE_HEIGHT_MAX = 500;
+const NBR_PARTICLE_WIDTH_MIN = 50;
+const NBR_PARTICLE_WIDTH_MAX = 500;
+const NBR_PARTICLE_WIDTH_STEP = 50;
+const NBR_PARTICLE_HEIGHT_MIN = 500;
+const NBR_PARTICLE_HEIGHT_MAX = 1000;
 const NBR_PARTICLE_HEIGHT_STEP = 50;
 const NBR_PARTICLE_BORDER_RADIUS = 4;
 const STR_PARTICLE_BORDER = "2px solid darkgray";
 const STR_PARTICLE_BG_COLOR = "rgba(0, 0, 0, 0.5)";
-const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
-const BOOL_PARTICLE_IS_ROUNDED = false;
+const BOOL_PARTICLE_HAS_SIDES_EQUAL = true;
+const BOOL_PARTICLE_IS_ROUNDED = true;
 // --------------------------------------------------------------------------
 const randomizeStep = (nbrStep) => {
 	if (nbrStep <= 0) {
