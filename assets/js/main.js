@@ -29,6 +29,7 @@ const NBR_PARTICLE_HEIGHT_MAX = 1000;
 const NBR_PARTICLE_HEIGHT_STEP = 50;
 const NBR_PARTICLE_BORDER_RADIUS = Math.min(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX)/2;
 const STR_PARTICLE_BORDER = "2px solid darkgray";
+const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
 // --------------------------------------------------------------------------
 const randomizeStep = (nbrStep) => {
 	if (nbrStep <= 0) {
@@ -45,7 +46,7 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	let elemParticle = document.createElement("div");
 	elemParticle.style.position = "absolute";
 	elemParticle.style.width = `${NBR_PARTICLE_WIDTH_MAX - (NBR_PARTICLE_WIDTH_MAX - NBR_PARTICLE_WIDTH_MIN)*randomizeStep(NBR_PARTICLE_WIDTH_STEP)}px`;
-	elemParticle.style.height = `${NBR_PARTICLE_HEIGHT_MAX - (NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN)*randomizeStep(NBR_PARTICLE_HEIGHT_STEP)}px`;
+	elemParticle.style.height = BOOL_PARTICLE_HAS_SIDES_EQUAL? elemParticle.style.width : `${NBR_PARTICLE_HEIGHT_MAX - (NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN)*randomizeStep(NBR_PARTICLE_HEIGHT_STEP)}px`;
 	elemParticle.style.border = STR_PARTICLE_BORDER;
 	elemParticle.style.borderRadius = `${NBR_PARTICLE_BORDER_RADIUS}px`;
 	elemParticle.style.top = `${Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
