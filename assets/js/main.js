@@ -1,5 +1,5 @@
 // ==========================================================================
-// Parameters
+// 1. Parameters
 // --------------------------------------------------------------------------
 const NBR_CANVAS_WIDTH = 7680;
 const NBR_CANVAS_HEIGHT = 25000;
@@ -19,7 +19,7 @@ const STR_PARTICLE_BG_COLOR = "rgba(0, 0, 0, 0.5)";
 const BOOL_PARTICLE_HAS_SIDES_EQUAL = true;
 const BOOL_PARTICLE_IS_ROUNDED = true;
 // ==========================================================================
-// Background
+// 2. Background
 // --------------------------------------------------------------------------
 const elemBody = document.body;
 elemBody.style.position = "relative";
@@ -67,7 +67,7 @@ for (let particle of arrParticle) {
 	elemBGContainer.appendChild(particle);
 }
 // ==========================================================================
-// GSAP Animation
+// 3. GSAP Animation
 // --------------------------------------------------------------------------
 if (!!gsap) {
 	console.log(`GSAP \t\t ${gsap.version}`);
@@ -75,7 +75,7 @@ if (!!gsap) {
 	console.log("GSAP \t\t ERROR");
 }
 // ==========================================================================
-// Bootstrap Plugins
+// 4. Bootstrap Plugins
 // --------------------------------------------------------------------------
 if (!!bootstrap) {
 	console.log(`Bootstrap \t ${bootstrap.Alert.VERSION}`);
