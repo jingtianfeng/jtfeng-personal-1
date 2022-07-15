@@ -38,14 +38,14 @@ elemBGContainer.style.userSelect = "none";
 elemBGContainer.tabIndex = "-1";
 elemBGContainer.ariaDisabled = "true";
 // --------------------------------------------------------------------------
-const randomizeStep = (nbrStep) => {
+const randomizeStepMinMax = (nbrStep, nbrMin, nbrMax) => {
 	if (nbrStep <= 0) {
-		return 0;
+		return nbrMin;
 	} else if (nbrStep === 1) {
-		return Math.round(Math.random());
+		return Math.random() < 0.5 ? nbrMin : nbrMax;
 	} else {
 		nbrStep = Math.min(nbrStep, 100);
-		return Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100;
+		return nbrMin + Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100*(nbrMax-nbrMin);
 	}
 }
 // --------------------------------------------------------------------------
@@ -54,8 +54,8 @@ let arrParticle = [];
 for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	let elemParticle = document.createElement("div");
 	elemParticle.style.position = "absolute";
-	elemParticle.style.width = `${NBR_PARTICLE_WIDTH_MAX - (NBR_PARTICLE_WIDTH_MAX - NBR_PARTICLE_WIDTH_MIN)*randomizeStep(NBR_PARTICLE_WIDTH_STEP)}px`;
-	elemParticle.style.height = BOOL_PARTICLE_HAS_SIDES_EQUAL? elemParticle.style.width : `${NBR_PARTICLE_HEIGHT_MAX - (NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN)*randomizeStep(NBR_PARTICLE_HEIGHT_STEP)}px`;
+	elemParticle.style.width = `${randomizeStepMinMax(NBR_PARTICLE_WIDTH_STEP, NBR_PARTICLE_WIDTH_MIN, NBR_PARTICLE_WIDTH_MAX)}px`;
+	elemParticle.style.height = BOOL_PARTICLE_HAS_SIDES_EQUAL? elemParticle.style.width : `${randomizeStepMinMax(NBR_PARTICLE_HEIGHT_STEP, NBR_PARTICLE_HEIGHT_MIN, NBR_PARTICLE_HEIGHT_MAX)}px`;
 	elemParticle.style.backgroundColor = STR_PARTICLE_BG_COLOR;
 	elemParticle.style.border = STR_PARTICLE_BORDER;
 	elemParticle.style.borderRadius = `${BOOL_PARTICLE_IS_ROUNDED ? Math.max(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX)/2 : NBR_PARTICLE_BORDER_RADIUS}px`;
