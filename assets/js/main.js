@@ -41,7 +41,7 @@ elemBGContainer.style.userSelect = "none";
 elemBGContainer.tabIndex = "-1";
 elemBGContainer.ariaDisabled = "true";
 // --------------------------------------------------------------------------
-const randomizeStepMinMax = (nbrStep, nbrMin, nbrMax) => {
+const randomizeMinMaxStep = (nbrMin, nbrMax, nbrStep) => {
 	if (nbrStep <= 0) {
 		return nbrMin;
 	} else if (nbrStep === 1) {
@@ -57,12 +57,12 @@ let arrParticle = [];
 for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	let elemParticle = document.createElement("div");
 	elemParticle.style.position = "absolute";
-	elemParticle.style.width = `${randomizeStepMinMax(NBR_PARTICLE_WIDTH_STEP, NBR_PARTICLE_WIDTH_MIN, NBR_PARTICLE_WIDTH_MAX)}px`;
-	elemParticle.style.height = BOOL_PARTICLE_HAS_SIDES_EQUAL? elemParticle.style.width : `${randomizeStepMinMax(NBR_PARTICLE_HEIGHT_STEP, NBR_PARTICLE_HEIGHT_MIN, NBR_PARTICLE_HEIGHT_MAX)}px`;
+	elemParticle.style.width = `${randomizeMinMaxStep(NBR_PARTICLE_WIDTH_MIN, NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_WIDTH_STEP)}px`;
+	elemParticle.style.height = BOOL_PARTICLE_HAS_SIDES_EQUAL? elemParticle.style.width : `${randomizeMinMaxStep(NBR_PARTICLE_HEIGHT_MIN, NBR_PARTICLE_HEIGHT_MAX, NBR_PARTICLE_HEIGHT_STEP)}px`;
 	elemParticle.style.backgroundColor = STR_PARTICLE_BG_COLOR;
 	elemParticle.style.border = STR_PARTICLE_BORDER;
 	elemParticle.style.borderRadius = `${BOOL_PARTICLE_IS_ROUNDED ? Math.max(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX)/2 : NBR_PARTICLE_BORDER_RADIUS}px`;
-	elemParticle.style.opacity = `${BOOL_PARTICLE_IS_OPAQUE ? 1 : randomizeStepMinMax(NBR_PARTICLE_OPACITY_STEP, NBR_PARTICLE_OPACITY_MIN, NBR_PARTICLE_OPACITY_MAX)}`;
+	elemParticle.style.opacity = `${BOOL_PARTICLE_IS_OPAQUE ? 1 : randomizeMinMaxStep(NBR_PARTICLE_OPACITY_MIN, NBR_PARTICLE_OPACITY_MAX, NBR_PARTICLE_OPACITY_STEP)}`;
 	elemParticle.style.top = `${Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
 	elemParticle.style.left = `${Math.round(NBR_CANVAS_WIDTH*Math.random())}px`;
 	arrParticle.push(elemParticle);
