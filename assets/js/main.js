@@ -1,7 +1,23 @@
 // ==========================================================================
 // Parameters
 // --------------------------------------------------------------------------
-
+const NBR_CANVAS_WIDTH = 7680;
+const NBR_CANVAS_HEIGHT = 25000;
+// --------------------------------------------------------------------------
+const NBR_PARTICLE_AMOUNT = 500;
+const NBR_PARTICLE_WIDTH_MIN = 50;
+const NBR_PARTICLE_WIDTH_MAX = 500;
+const NBR_PARTICLE_WIDTH_STEP = 50;
+const NBR_PARTICLE_HEIGHT_MIN = 500;
+const NBR_PARTICLE_HEIGHT_MAX = 1000;
+const NBR_PARTICLE_HEIGHT_STEP = 50;
+// --------------------------------------------------------------------------
+const NBR_PARTICLE_BORDER_RADIUS = 4;
+const STR_PARTICLE_BORDER = "2px solid darkgray";
+const STR_PARTICLE_BG_COLOR = "rgba(0, 0, 0, 0.5)";
+// --------------------------------------------------------------------------
+const BOOL_PARTICLE_HAS_SIDES_EQUAL = true;
+const BOOL_PARTICLE_IS_ROUNDED = true;
 // ==========================================================================
 // Background
 // --------------------------------------------------------------------------
@@ -21,26 +37,6 @@ elemBGContainer.style.userSelect = "none";
 elemBGContainer.tabIndex = "-1";
 elemBGContainer.ariaDisabled = "true";
 // --------------------------------------------------------------------------
-let arrParticle = [];
-// --------------------------------------------------------------------------
-const NBR_CANVAS_WIDTH = 7680;
-const NBR_CANVAS_HEIGHT = 25000;
-// --------------------------------------------------------------------------
-const NBR_PARTICLE_AMOUNT = 500;
-const NBR_PARTICLE_WIDTH_MIN = 50;
-const NBR_PARTICLE_WIDTH_MAX = 500;
-const NBR_PARTICLE_WIDTH_STEP = 50;
-const NBR_PARTICLE_HEIGHT_MIN = 500;
-const NBR_PARTICLE_HEIGHT_MAX = 1000;
-const NBR_PARTICLE_HEIGHT_STEP = 50;
-// --------------------------------------------------------------------------
-const NBR_PARTICLE_BORDER_RADIUS = 4;
-const STR_PARTICLE_BORDER = "2px solid darkgray";
-const STR_PARTICLE_BG_COLOR = "rgba(0, 0, 0, 0.5)";
-// --------------------------------------------------------------------------
-const BOOL_PARTICLE_HAS_SIDES_EQUAL = true;
-const BOOL_PARTICLE_IS_ROUNDED = true;
-// --------------------------------------------------------------------------
 const randomizeStep = (nbrStep) => {
 	if (nbrStep <= 0) {
 		return 0;
@@ -51,6 +47,8 @@ const randomizeStep = (nbrStep) => {
 		return Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100;
 	}
 }
+// --------------------------------------------------------------------------
+let arrParticle = [];
 // --------------------------------------------------------------------------
 for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	let elemParticle = document.createElement("div");
