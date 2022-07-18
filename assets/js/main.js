@@ -4,19 +4,19 @@
 const NBR_CANVAS_WIDTH = 7680;
 const NBR_CANVAS_HEIGHT = 25000;
 // --------------------------------------------------------------------------
-const NBR_PARTICLE_AMOUNT = 350;
-const NBR_PARTICLE_DEPTH_OFFSET = 500;
+const NBR_PARTICLE_AMOUNT = 150;
+const NBR_PARTICLE_DEPTH_OFFSET = 200;
 const NBR_PARTICLE_WIDTH_MIN = 25;
-const NBR_PARTICLE_WIDTH_MAX = 100;
-const NBR_PARTICLE_WIDTH_STEP = 15;
+const NBR_PARTICLE_WIDTH_MAX = 50;
+const NBR_PARTICLE_WIDTH_STEP = 2;
 const NBR_PARTICLE_HEIGHT_MIN = 250;
 const NBR_PARTICLE_HEIGHT_MAX = 750;
 const NBR_PARTICLE_HEIGHT_STEP = 50;
 // --------------------------------------------------------------------------
-const NBR_PARTICLE_BORDER_RADIUS_MIN = 16;
-const NBR_PARTICLE_BORDER_RADIUS_MAX = 32;
-const NBR_PARTICLE_BORDER_WIDTH_MIN = 4;
-const NBR_PARTICLE_BORDER_WIDTH_MAX = 12;
+const NBR_PARTICLE_BORDER_RADIUS_MIN = 4;
+const NBR_PARTICLE_BORDER_RADIUS_MAX = 12;
+const NBR_PARTICLE_BORDER_WIDTH_MIN = 2;
+const NBR_PARTICLE_BORDER_WIDTH_MAX = 6;
 const STR_PARTICLE_BORDER_STYLE = "solid";
 const STR_PARTICLE_BORDER_COLOR = "darkgray";
 const ARR_PARTICLE_BG_COLOR = ["red", "green", "blue"];
