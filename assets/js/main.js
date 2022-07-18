@@ -79,21 +79,23 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 			)
 		)
 	}px`;
-	elemParticle.style.height = BOOL_PARTICLE_HAS_SIDES_EQUAL? elemParticle.style.width : `${
-		Math.round(
-			randomizeMinMaxStep(
-				NBR_PARTICLE_HEIGHT_MIN, 
-				NBR_PARTICLE_HEIGHT_MAX, 
-				NBR_PARTICLE_HEIGHT_STEP
-			) + 
-			i / NBR_PARTICLE_AMOUNT * NBR_PARTICLE_DEPTH_OFFSET * 
-			(NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN) / 
-			(
-				NBR_PARTICLE_WIDTH_MAX - NBR_PARTICLE_WIDTH_MIN + 
-				NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN
+	elemParticle.style.height = BOOL_PARTICLE_HAS_SIDES_EQUAL? 
+		elemParticle.style.width : 
+		`${
+			Math.round(
+				randomizeMinMaxStep(
+					NBR_PARTICLE_HEIGHT_MIN, 
+					NBR_PARTICLE_HEIGHT_MAX, 
+					NBR_PARTICLE_HEIGHT_STEP
+				) + 
+				i / NBR_PARTICLE_AMOUNT * NBR_PARTICLE_DEPTH_OFFSET * 
+				(NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN) / 
+				(
+					NBR_PARTICLE_WIDTH_MAX - NBR_PARTICLE_WIDTH_MIN + 
+					NBR_PARTICLE_HEIGHT_MAX - NBR_PARTICLE_HEIGHT_MIN
+				)
 			)
-		)
-	}px`;
+		}px`;
 	elemParticle.style.backgroundColor = ARR_PARTICLE_BG_COLOR[
 		Math.round(
 			Math.random() * (ARR_PARTICLE_BG_COLOR.length - 1)
