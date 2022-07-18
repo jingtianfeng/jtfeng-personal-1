@@ -19,7 +19,7 @@ const NBR_PARTICLE_BORDER_WIDTH_MIN = 4;
 const NBR_PARTICLE_BORDER_WIDTH_MAX = 12;
 const STR_PARTICLE_BORDER_STYLE = "solid";
 const STR_PARTICLE_BORDER_COLOR = "darkgray";
-const STR_PARTICLE_BG_COLOR = "gray";
+const ARR_PARTICLE_BG_COLOR = ["red", "green", "blue"];
 const NBR_PARTICLE_OPACITY_MIN = 0.10;
 const NBR_PARTICLE_OPACITY_MAX = 0.95;
 // --------------------------------------------------------------------------
@@ -94,7 +94,11 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 			)
 		)
 	}px`;
-	elemParticle.style.backgroundColor = STR_PARTICLE_BG_COLOR;
+	elemParticle.style.backgroundColor = ARR_PARTICLE_BG_COLOR[
+		Math.round(
+			Math.random() * (ARR_PARTICLE_BG_COLOR.length - 1)
+		)
+	];
 	elemParticle.style.borderWidth = `${
 		Math.round(
 			NBR_PARTICLE_BORDER_WIDTH_MIN + 
