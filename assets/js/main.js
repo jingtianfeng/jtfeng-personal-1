@@ -95,9 +95,19 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 		)
 	}px`;
 	elemParticle.style.backgroundColor = STR_PARTICLE_BG_COLOR;
-	elemParticle.style.borderWidth = `${Math.round(NBR_PARTICLE_BORDER_WIDTH_MIN + i / NBR_PARTICLE_AMOUNT * (NBR_PARTICLE_BORDER_WIDTH_MAX - NBR_PARTICLE_BORDER_WIDTH_MIN))}px`;
+	elemParticle.style.borderWidth = `${
+		Math.round(
+			NBR_PARTICLE_BORDER_WIDTH_MIN + 
+			i / NBR_PARTICLE_AMOUNT * 
+			(NBR_PARTICLE_BORDER_WIDTH_MAX - NBR_PARTICLE_BORDER_WIDTH_MIN)
+		)
+	}px`;
 	elemParticle.style.borderStyle = STR_PARTICLE_BORDER_STYLE;
-	elemParticle.style.borderColor = ARR_PARTICLE_BORDER_COLOR[Math.round(Math.random() * ARR_PARTICLE_BORDER_COLOR.length)];
+	elemParticle.style.borderColor = ARR_PARTICLE_BORDER_COLOR[
+		Math.round(
+			Math.random() * ARR_PARTICLE_BORDER_COLOR.length
+		)
+	];
 	elemParticle.style.borderRadius = `${BOOL_PARTICLE_IS_ROUNDED ? 
 			(
 				Math.max(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX) + 
