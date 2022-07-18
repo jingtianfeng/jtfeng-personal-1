@@ -18,7 +18,7 @@ const NBR_PARTICLE_BORDER_RADIUS_MAX = 32;
 const NBR_PARTICLE_BORDER_WIDTH_MIN = 16;
 const NBR_PARTICLE_BORDER_WIDTH_MAX = 48;
 const STR_PARTICLE_BORDER_STYLE = "dashed";
-const ARR_PARTICLE_BORDER_COLOR = ["blue", "yellow", "red"];
+const STR_PARTICLE_BORDER_COLOR = "red";
 const STR_PARTICLE_BG_COLOR = "gray";
 const NBR_PARTICLE_OPACITY_MIN = 0.10;
 const NBR_PARTICLE_OPACITY_MAX = 0.95;
@@ -103,11 +103,7 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 		)
 	}px`;
 	elemParticle.style.borderStyle = STR_PARTICLE_BORDER_STYLE;
-	elemParticle.style.borderColor = ARR_PARTICLE_BORDER_COLOR[
-		Math.round(
-			Math.random() * ARR_PARTICLE_BORDER_COLOR.length
-		)
-	];
+	elemParticle.style.borderColor = STR_PARTICLE_BORDER_COLOR;
 	elemParticle.style.borderRadius = `${BOOL_PARTICLE_IS_ROUNDED ? 
 			(
 				Math.max(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX) + 
