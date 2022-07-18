@@ -49,7 +49,10 @@ const randomizeMinMaxStep = (nbrMin, nbrMax, nbrStep) => {
 		return Math.random() < 0.5 ? nbrMin : nbrMax;
 	} else {
 		nbrStep = Math.min(nbrStep, 100);
-		return nbrMin + Math.trunc(Math.round(Math.random()*nbrStep)/nbrStep*100)/100*(nbrMax-nbrMin);
+		return nbrMin + Math.trunc(
+			Math.round(Math.random()*nbrStep) / nbrStep * 
+			100
+		) / 100 * (nbrMax - nbrMin);
 	}
 }
 // --------------------------------------------------------------------------
