@@ -17,7 +17,6 @@ const STR_PARTICLE_BORDER = "4px solid darkgray";
 const STR_PARTICLE_BG_COLOR = "gray";
 const NBR_PARTICLE_OPACITY_MIN = 0.25;
 const NBR_PARTICLE_OPACITY_MAX = 0.50;
-const NBR_PARTICLE_OPACITY_STEP = 5;
 // --------------------------------------------------------------------------
 const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
 const BOOL_PARTICLE_IS_ROUNDED = false;
@@ -62,7 +61,7 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	elemParticle.style.backgroundColor = STR_PARTICLE_BG_COLOR;
 	elemParticle.style.border = STR_PARTICLE_BORDER;
 	elemParticle.style.borderRadius = `${BOOL_PARTICLE_IS_ROUNDED ? Math.max(NBR_PARTICLE_WIDTH_MAX, NBR_PARTICLE_HEIGHT_MAX)/2 : NBR_PARTICLE_BORDER_RADIUS}px`;
-	elemParticle.style.opacity = `${BOOL_PARTICLE_IS_OPAQUE ? 1 : randomizeMinMaxStep(NBR_PARTICLE_OPACITY_MIN, NBR_PARTICLE_OPACITY_MAX, NBR_PARTICLE_OPACITY_STEP)}`;
+	elemParticle.style.opacity = `${BOOL_PARTICLE_IS_OPAQUE ? 1 : Math.trunc((NBR_PARTICLE_OPACITY_MIN + (NBR_PARTICLE_OPACITY_MAX - NBR_PARTICLE_OPACITY_MIN)*i/NBR_PARTICLE_AMOUNT)*100)/100}`;
 	elemParticle.style.top = `${Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
 	elemParticle.style.left = `${Math.round(NBR_CANVAS_WIDTH*Math.random())}px`;
 	arrParticle.push(elemParticle);
