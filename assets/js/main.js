@@ -25,6 +25,7 @@ const NBR_PARTICLE_OPACITY_MAX = 0.95;
 // --------------------------------------------------------------------------
 const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
 const BOOL_PARTICLE_IS_ROUNDED = false;
+const BOOL_PARTICLE_IS_BORDERLESS = true;
 const BOOL_PARTICLE_IS_OPAQUE = false;
 // ==========================================================================
 // 2. Background
@@ -101,12 +102,13 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 			Math.random() * (ARR_PARTICLE_BG_COLOR.length - 1)
 		)
 	];
-	elemParticle.style.borderWidth = `${
-		Math.round(
-			NBR_PARTICLE_BORDER_WIDTH_MIN + 
-			i / NBR_PARTICLE_AMOUNT * 
-			(NBR_PARTICLE_BORDER_WIDTH_MAX - NBR_PARTICLE_BORDER_WIDTH_MIN)
-		)
+	elemParticle.style.borderWidth = `${BOOL_PARTICLE_IS_BORDERLESS ? 
+			0 : 
+			Math.round(
+				NBR_PARTICLE_BORDER_WIDTH_MIN + 
+				i / NBR_PARTICLE_AMOUNT * 
+				(NBR_PARTICLE_BORDER_WIDTH_MAX - NBR_PARTICLE_BORDER_WIDTH_MIN)
+			)
 	}px`;
 	elemParticle.style.borderStyle = STR_PARTICLE_BORDER_STYLE;
 	elemParticle.style.borderColor = STR_PARTICLE_BORDER_COLOR;
