@@ -27,6 +27,8 @@ const BOOL_PARTICLE_HAS_SIDES_EQUAL = true;
 const BOOL_PARTICLE_IS_ROUNDED = true;
 const BOOL_PARTICLE_IS_BORDERLESS = false;
 const BOOL_PARTICLE_IS_OPAQUE = false;
+const BOOL_PARTICLE_IS_AT_TOP = true;
+const BOOL_PARTICLE_IS_AT_LEFT = true;
 // ==========================================================================
 // 2. Background
 // --------------------------------------------------------------------------
@@ -133,8 +135,8 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 				100
 			) / 100
 	}`;
-	elemParticle.style.top = `${Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
-	elemParticle.style.left = `${Math.round(NBR_CANVAS_WIDTH*Math.random())}px`;
+	elemParticle.style.top = `${BOOL_PARTICLE_IS_AT_TOP ? 0 : Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
+	elemParticle.style.left = `${BOOL_PARTICLE_IS_AT_LEFT ? 0 : Math.round(NBR_CANVAS_WIDTH*Math.random())}px`;
 	arrParticle.push(elemParticle);
 }
 // --------------------------------------------------------------------------
