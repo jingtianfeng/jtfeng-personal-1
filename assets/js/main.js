@@ -4,31 +4,31 @@
 const NBR_CANVAS_WIDTH = 7680;
 const NBR_CANVAS_HEIGHT = 25000;
 // --------------------------------------------------------------------------
-const NBR_PARTICLE_AMOUNT = 500;
-const NBR_PARTICLE_DEPTH_OFFSET = 50;
-const NBR_PARTICLE_WIDTH_MIN = 50;
-const NBR_PARTICLE_WIDTH_MAX = 250;
-const NBR_PARTICLE_WIDTH_STEP = 10;
-const NBR_PARTICLE_HEIGHT_MIN = 250;
-const NBR_PARTICLE_HEIGHT_MAX = 750;
-const NBR_PARTICLE_HEIGHT_STEP = 50;
+const NBR_PARTICLE_AMOUNT = 50;
+const NBR_PARTICLE_DEPTH_OFFSET = 0;
+const NBR_PARTICLE_WIDTH_MIN = 2;
+const NBR_PARTICLE_WIDTH_MAX = 4;
+const NBR_PARTICLE_WIDTH_STEP = 2;
+const NBR_PARTICLE_HEIGHT_MIN = NBR_CANVAS_HEIGHT * 2;
+const NBR_PARTICLE_HEIGHT_MAX = NBR_CANVAS_HEIGHT * 3;
+const NBR_PARTICLE_HEIGHT_STEP = 0;
 // --------------------------------------------------------------------------
-const NBR_PARTICLE_BORDER_RADIUS_MIN = 4;
-const NBR_PARTICLE_BORDER_RADIUS_MAX = 8;
-const NBR_PARTICLE_BORDER_WIDTH_MIN = 4;
-const NBR_PARTICLE_BORDER_WIDTH_MAX = 8;
+const NBR_PARTICLE_BORDER_RADIUS_MIN = 0;
+const NBR_PARTICLE_BORDER_RADIUS_MAX = 0;
+const NBR_PARTICLE_BORDER_WIDTH_MIN = 0;
+const NBR_PARTICLE_BORDER_WIDTH_MAX = 0;
 const STR_PARTICLE_BORDER_STYLE = "solid";
 const STR_PARTICLE_BORDER_COLOR = "darkgray";
 const ARR_PARTICLE_BG_COLOR = ["gray"];
-const NBR_PARTICLE_OPACITY_MIN = 0.50;
-const NBR_PARTICLE_OPACITY_MAX = 0.85;
+const NBR_PARTICLE_OPACITY_MIN = 0.10;
+const NBR_PARTICLE_OPACITY_MAX = 0.95;
 // --------------------------------------------------------------------------
-const BOOL_PARTICLE_HAS_SIDES_EQUAL = true;
-const BOOL_PARTICLE_IS_ROUNDED = true;
+const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
+const BOOL_PARTICLE_IS_ROUNDED = false;
 const BOOL_PARTICLE_IS_BORDERLESS = false;
 const BOOL_PARTICLE_IS_OPAQUE = false;
 const BOOL_PARTICLE_IS_AT_TOP = true;
-const BOOL_PARTICLE_IS_AT_LEFT = true;
+const BOOL_PARTICLE_IS_AT_LEFT = false;
 // ==========================================================================
 // 2. Background
 // --------------------------------------------------------------------------
