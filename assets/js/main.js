@@ -135,8 +135,14 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 				100
 			) / 100
 	}`;
-	elemParticle.style.top = `${BOOL_PARTICLE_IS_AT_TOP ? 0 : Math.round(NBR_CANVAS_HEIGHT*Math.random())}px`;
-	elemParticle.style.left = `${BOOL_PARTICLE_IS_AT_LEFT ? 0 : Math.round(NBR_CANVAS_WIDTH*Math.random())}px`;
+	elemParticle.style.top = `${BOOL_PARTICLE_IS_AT_TOP ? 
+			0 : 
+			Math.round(NBR_CANVAS_HEIGHT*Math.random())
+	}px`;
+	elemParticle.style.left = `${BOOL_PARTICLE_IS_AT_LEFT ? 
+			0 : 
+			Math.round(NBR_CANVAS_WIDTH*Math.random())
+	}px`;
 	arrParticle.push(elemParticle);
 }
 // --------------------------------------------------------------------------
