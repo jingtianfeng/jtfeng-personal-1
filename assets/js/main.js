@@ -4,28 +4,28 @@
 const NBR_CANVAS_WIDTH = 7680;
 const NBR_CANVAS_HEIGHT = 25000;
 // --------------------------------------------------------------------------
-const NBR_PARTICLE_AMOUNT = 150;
-const NBR_PARTICLE_DEPTH_OFFSET = 200;
-const NBR_PARTICLE_WIDTH_MIN = 25;
-const NBR_PARTICLE_WIDTH_MAX = 50;
-const NBR_PARTICLE_WIDTH_STEP = 2;
+const NBR_PARTICLE_AMOUNT = 500;
+const NBR_PARTICLE_DEPTH_OFFSET = 50;
+const NBR_PARTICLE_WIDTH_MIN = 50;
+const NBR_PARTICLE_WIDTH_MAX = 250;
+const NBR_PARTICLE_WIDTH_STEP = 10;
 const NBR_PARTICLE_HEIGHT_MIN = 250;
 const NBR_PARTICLE_HEIGHT_MAX = 750;
 const NBR_PARTICLE_HEIGHT_STEP = 50;
 // --------------------------------------------------------------------------
 const NBR_PARTICLE_BORDER_RADIUS_MIN = 4;
-const NBR_PARTICLE_BORDER_RADIUS_MAX = 12;
-const NBR_PARTICLE_BORDER_WIDTH_MIN = 2;
-const NBR_PARTICLE_BORDER_WIDTH_MAX = 6;
+const NBR_PARTICLE_BORDER_RADIUS_MAX = 8;
+const NBR_PARTICLE_BORDER_WIDTH_MIN = 4;
+const NBR_PARTICLE_BORDER_WIDTH_MAX = 8;
 const STR_PARTICLE_BORDER_STYLE = "solid";
 const STR_PARTICLE_BORDER_COLOR = "darkgray";
-const ARR_PARTICLE_BG_COLOR = ["red", "green", "blue"];
-const NBR_PARTICLE_OPACITY_MIN = 0.10;
-const NBR_PARTICLE_OPACITY_MAX = 0.95;
+const ARR_PARTICLE_BG_COLOR = ["gray"];
+const NBR_PARTICLE_OPACITY_MIN = 0.50;
+const NBR_PARTICLE_OPACITY_MAX = 0.85;
 // --------------------------------------------------------------------------
-const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
-const BOOL_PARTICLE_IS_ROUNDED = false;
-const BOOL_PARTICLE_IS_BORDERLESS = true;
+const BOOL_PARTICLE_HAS_SIDES_EQUAL = true;
+const BOOL_PARTICLE_IS_ROUNDED = true;
+const BOOL_PARTICLE_IS_BORDERLESS = false;
 const BOOL_PARTICLE_IS_OPAQUE = false;
 // ==========================================================================
 // 2. Background
