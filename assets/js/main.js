@@ -146,8 +146,8 @@ for (let i = 0; i < NBR_PARTICLE_AMOUNT; i++) {
 	arrParticle.push(elemParticle);
 }
 // --------------------------------------------------------------------------
-for (let particle of arrParticle) {
-	elemBGContainer.appendChild(particle);
+for (const elemParticle of arrParticle) {
+	elemBGContainer.appendChild(elemParticle);
 }
 // ==========================================================================
 // 3. GSAP Animation
