@@ -160,6 +160,18 @@ if (!!gsap) {
 			skewX: 10,
 		}
 	);
+	gsap.to(
+		arrParticle, 
+		{
+			x: "random(-100, 100, 1)",
+			skewX: "-=1",
+			repeat: -1,
+			repeatRefresh: true,
+			duration: 40,
+			yoyo: true,
+			ease: "none",
+		}
+	);
 } else {
 	console.log("GSAP \t\t ERROR");
 }
