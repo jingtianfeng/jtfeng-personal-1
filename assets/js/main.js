@@ -154,6 +154,12 @@ for (let particle of arrParticle) {
 // --------------------------------------------------------------------------
 if (!!gsap) {
 	console.log(`GSAP \t\t ${gsap.version}`);
+	gsap.set(
+		arrParticle, 
+		{
+			skewX: 10,
+		}
+	);
 } else {
 	console.log("GSAP \t\t ERROR");
 }
