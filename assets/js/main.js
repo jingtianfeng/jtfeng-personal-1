@@ -157,19 +157,19 @@ if (!!gsap) {
 	gsap.set(
 		arrParticle, 
 		{
-			skewX: 10,
+			skewX: 12,
 		}
 	);
 	gsap.to(
 		arrParticle, 
 		{
 			x: "random(-100, 100, 1)",
-			skewX: "-=1",
+			opacity: "+=0.04",
 			repeat: -1,
 			repeatRefresh: true,
-			duration: 40,
+			duration: 12,
 			yoyo: true,
-			ease: "none",
+			ease: "power1.inOut",
 		}
 	);
 } else {
