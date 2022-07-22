@@ -1,34 +1,34 @@
 // ==========================================================================
 // 1. Parameters
 // --------------------------------------------------------------------------
-const NBR_CANVAS_WIDTH = 12000;
+const NBR_CANVAS_WIDTH = 8000;
 const NBR_CANVAS_HEIGHT = 20000;
 // --------------------------------------------------------------------------
-const NBR_PARTICLE_AMOUNT = 80;
+const NBR_PARTICLE_AMOUNT = 120;
 const NBR_PARTICLE_DEPTH_OFFSET = 0;
-const NBR_PARTICLE_WIDTH_MIN = 2;
-const NBR_PARTICLE_WIDTH_MAX = 3;
-const NBR_PARTICLE_WIDTH_STEP = 1;
-const NBR_PARTICLE_HEIGHT_MIN = NBR_CANVAS_HEIGHT * 2;
-const NBR_PARTICLE_HEIGHT_MAX = NBR_CANVAS_HEIGHT * 3;
-const NBR_PARTICLE_HEIGHT_STEP = 2;
+const NBR_PARTICLE_WIDTH_MIN = 22000;
+const NBR_PARTICLE_WIDTH_MAX = 24000;
+const NBR_PARTICLE_WIDTH_STEP = 2;
+const NBR_PARTICLE_HEIGHT_MIN = 2;
+const NBR_PARTICLE_HEIGHT_MAX = 3;
+const NBR_PARTICLE_HEIGHT_STEP = 1;
 // --------------------------------------------------------------------------
 const NBR_PARTICLE_BORDER_RADIUS_MIN = 0;
 const NBR_PARTICLE_BORDER_RADIUS_MAX = 0;
-const NBR_PARTICLE_BORDER_WIDTH_MIN = 1;
-const NBR_PARTICLE_BORDER_WIDTH_MAX = 2;
+const NBR_PARTICLE_BORDER_WIDTH_MIN = 0;
+const NBR_PARTICLE_BORDER_WIDTH_MAX = 0;
 const STR_PARTICLE_BORDER_STYLE = "solid";
 const STR_PARTICLE_BORDER_COLOR = "#e6e6e6";
-const ARR_PARTICLE_BG_COLOR = ["#808080"];
-const NBR_PARTICLE_OPACITY_MIN = 0.10;
-const NBR_PARTICLE_OPACITY_MAX = 0.20;
+const ARR_PARTICLE_BG_COLOR = ["#333333"];
+const NBR_PARTICLE_OPACITY_MIN = 0.70;
+const NBR_PARTICLE_OPACITY_MAX = 0.80;
 // --------------------------------------------------------------------------
 const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
 const BOOL_PARTICLE_IS_ROUNDED = false;
 const BOOL_PARTICLE_IS_BORDERLESS = true;
 const BOOL_PARTICLE_IS_OPAQUE = false;
-const BOOL_PARTICLE_IS_AT_TOP = true;
-const BOOL_PARTICLE_IS_AT_LEFT = false;
+const BOOL_PARTICLE_IS_AT_TOP = false;
+const BOOL_PARTICLE_IS_AT_LEFT = true;
 // ==========================================================================
 // 2. Background
 // --------------------------------------------------------------------------
