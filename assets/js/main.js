@@ -4,7 +4,7 @@
 const NBR_CANVAS_WIDTH = 8000;
 const NBR_CANVAS_HEIGHT = 20000;
 // --------------------------------------------------------------------------
-const NBR_PARTICLE_AMOUNT = 120;
+const NBR_PARTICLE_AMOUNT = 100;
 const NBR_PARTICLE_DEPTH_OFFSET = 0;
 const NBR_PARTICLE_WIDTH_MIN = 22000;
 const NBR_PARTICLE_WIDTH_MAX = 24000;
@@ -20,8 +20,8 @@ const NBR_PARTICLE_BORDER_WIDTH_MAX = 0;
 const STR_PARTICLE_BORDER_STYLE = "solid";
 const STR_PARTICLE_BORDER_COLOR = "#e6e6e6";
 const ARR_PARTICLE_BG_COLOR = ["#333333"];
-const NBR_PARTICLE_OPACITY_MIN = 0.70;
-const NBR_PARTICLE_OPACITY_MAX = 0.80;
+const NBR_PARTICLE_OPACITY_MIN = 0.80;
+const NBR_PARTICLE_OPACITY_MAX = 0.90;
 // --------------------------------------------------------------------------
 const BOOL_PARTICLE_HAS_SIDES_EQUAL = false;
 const BOOL_PARTICLE_IS_ROUNDED = false;
